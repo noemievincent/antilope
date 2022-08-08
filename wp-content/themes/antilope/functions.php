@@ -33,6 +33,54 @@ add_filter('use_block_editor_for_post', '__return_false');
 // Activer les images sur les articles
 add_theme_support('post-thumbnails');
 
+// Enregistrer un seul custom post-type pour les modules
+register_post_type('module', [
+	'label'         => 'Modules',
+	'labels'        => [
+		'name'          => 'Modules',
+		'singular_name' => 'Module',
+	],
+	'description'   => 'Les modules disponibles',
+	'public'        => true,
+	'has_archive'   => true,
+	'menu_position' => 5,
+	'menu_icon'     => 'dashicons-block-default',
+	'supports'      => ['title', 'editor', 'thumbnail'],
+	'rewrite'       => ['slug' => 'modules'],
+]);
+
+// Enregistrer un seul custom post-type pour les partenaires
+register_post_type('partner', [
+	'label'         => 'Partners',
+	'labels'        => [
+		'name'          => 'Partners',
+		'singular_name' => 'Partner',
+	],
+	'description'   => 'Les partenaires du projets',
+	'public'        => true,
+	'has_archive'   => true,
+	'menu_position' => 5,
+	'menu_icon'     => 'dashicons-groups',
+	'supports'      => ['title', 'editor', 'thumbnail'],
+	'rewrite'       => ['slug' => 'partners'],
+]);
+
+// Enregistrer un seul custom post-type pour les publications
+register_post_type('article', [
+	'label'         => 'Articles',
+	'labels'        => [
+		'name'          => 'Articles',
+		'singular_name' => 'Article',
+	],
+	'description'   => 'Les publications sur le projet',
+	'public'        => true,
+	'has_archive'   => true,
+	'menu_position' => 5,
+	'menu_icon'     => 'dashicons-text-page',
+	'supports'      => ['title', 'editor', 'thumbnail'],
+	'rewrite'       => ['slug' => 'articles'],
+]);
+
 // Enregistrer un custom post-type pour les messages de contact
 register_post_type('message', [
 	'label'         => 'Messages de contact',
@@ -40,7 +88,7 @@ register_post_type('message', [
 		'name'          => 'Messages de contact',
 		'singular_name' => 'Message de contact',
 	],
-	'description'   => 'Les messages envoyés par le formulaire de contact.',
+	'description'   => 'Les messages envoyés par le formulaire de contact',
 	'public'        => false,
 	'show_ui'       => true,
 	'menu_position' => 15,
