@@ -1,1 +1,6 @@
 @import "reset";
+
+img, svg {
+  max-height: 98px;
+  max-width: 98px;
+}

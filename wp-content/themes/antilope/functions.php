@@ -2,7 +2,7 @@
 
 // Charger les fichiers nécessaires
 //require_once(__DIR__ . '/acf.php');
-//require_once(__DIR__ . '/CustomSearchQuery.php');
+require_once(__DIR__ . '/CustomSearchQuery.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuWalker.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuItem.php');
 require_once(__DIR__ . '/Forms/BaseFormController.php');
@@ -15,7 +15,7 @@ require_once(__DIR__ . '/Forms/Validators/RequiredValidator.php');
 require_once(__DIR__ . '/Forms/Validators/EmailValidator.php');
 require_once(__DIR__ . '/Forms/Validators/AcceptedValidator.php');
 
-// Lancer la sessions PHP pour pouvoir passer des variables de page en page
+// Lancer la session PHP pour pouvoir passer des variables de page en page
 add_action('init', 'ant_boot_theme', 1);
 
 function ant_boot_theme() {
@@ -81,6 +81,22 @@ register_post_type('article', [
 	'rewrite'       => ['slug' => 'articles'],
 ]);
 
+// Enregistrer un seul custom post-type pour les sites des partenaires
+register_post_type('website', [
+	'label'         => 'Websites',
+	'labels'        => [
+		'name'          => 'Websites',
+		'singular_name' => 'Website',
+	],
+	'description'   => 'Les sites web des partenaires',
+	'public'        => true,
+	'has_archive'   => true,
+	'menu_position' => 5,
+	'menu_icon'     => 'dashicons-admin-site-alt3',
+	'supports'      => ['title', 'editor', 'thumbnail'],
+	'rewrite'       => ['slug' => 'websites'],
+]);
+
 // Enregistrer un custom post-type pour les messages de contact
 register_post_type('message', [
 	'label'         => 'Messages de contact',
@@ -106,33 +122,59 @@ register_post_type('message', [
 register_nav_menu('primary', 'Navigation principale (haut de page)');
 register_nav_menu('footer', 'Navigation de pied de page');
 
-// Fonction pour récupérer les éléments d'un menu sous forme d'un tableau d'objets
-function ant_get_menu_items($location) {
-	$items = [];
+// Récupérer les modules via une requête Wordpress
+function ant_get_modules($count = 20, $search = null)
+{
+	// 1. on instancie l'objet WP_Query
+	$modules = new ANT_CustomSearchQuery([
+		'post_type' => 'module',
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'posts_per_page' => $count,
+		's' => strlen($search) ? $search : null,
+	]);
 
-	// Récupérer le menu Wordpress pour $location
-	$locations = get_nav_menu_locations();
+	// 2. on retourne l'objet WP_Query
+	return $modules;
+}
 
-	if ( ! ($locations[$location] ?? false)) {
-		return $items;
-	}
+// Récupérer les articles via une requête Wordpress
+function ant_get_articles($count = 20, $search = null)
+{
+	// 1. on instancie l'objet WP_Query
+	$articles = new ANT_CustomSearchQuery([
+		'post_type' => 'article',
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'posts_per_page' => $count,
+		's' => strlen($search) ? $search : null,
+	]);
 
-	$menu = $locations[$location];
+	// 2. on retourne l'objet WP_Query
+	return $articles;
+}
 
-	// Récupérer tous les éléments du menu récupéré
-	$posts = wp_get_nav_menu_items($menu);
+// Récupérer les sites web des partenaires via une requête Wordpress
+function ant_get_websites() {
+	// 1. on instancie l'objet WP_Query
+	$websites = new ANT_CustomSearchQuery([
+		'post_type' => 'website',
+		'order'     => 'DESC',
+	]);
 
-	// Formater chaque élément dans une instance de classe personnalisée
-	// Boucler sur chaque $post
-	foreach ($posts as $post) {
-		// Transformer le WP_Post en une instance de notre classe personnalisée
-		$item = new PrimaryMenuItem($post);
+	// 2. on retourne l'objet WP_Query
+	return $websites;
+}
 
-		$items[] = $item;
-	}
+// Récupérer les partenaires via une requête Wordpress
+function ant_get_partners() {
+	// 1. on instancie l'objet WP_Query
+	$partner = new ANT_CustomSearchQuery([
+		'post_type' => 'partner',
+	]);
 
-	// Retourner un tableau d'éléments du menu formatés
-	return $items;
+	// 2. on retourne l'objet WP_Query
+	return $partner;
 }
 
 // Gérer l'envoi de formulaire personnalisé
