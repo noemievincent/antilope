@@ -1,0 +1,55 @@
+@import "presentation";
+@import "hero";
+
+.home main h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.home .modules {
+  text-align: right;
+}
+
+.module {
+  position: relative;
+}
+
+.modules__cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 90px;
+}
+
+.module__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  max-height: 355px;
+  text-align: center;
+  align-items: center;
+}
+
+.module__content {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
+  border-radius: 20px;
+  padding: 5px 25px 50px;
+  gap: 8px;
+}
+
+.module__svg {
+  width: 220px;
+  height: 300px;
+}
+
+.module__link {
+  font-size: 14px;
+  max-width: 170px;
+  padding: 16px 40px;
+  position: absolute;
+  bottom: -55px;
+}

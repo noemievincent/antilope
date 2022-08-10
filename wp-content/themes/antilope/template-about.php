@@ -14,7 +14,7 @@
                     <div class="card__container">
                         <h4 class="card__title"><?= get_the_title(); ?></h4>
                         <p class="card__content"><?= get_the_content(); ?></p>
-                        <a href="<?=get_field('website') ?>" class="card__link"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
+                        <a href="<?=get_field('website') ?>" class="card__link btn"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
                     </div>
                     <figure class="card__fig">
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="card__img">

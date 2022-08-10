@@ -1,0 +1,53 @@
+.hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../img/hero.jpg") no-repeat;
+  //background: url("../../img/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 980px;
+  color: #FFFFFF;
+  padding: 250px 60px;
+  margin-bottom: 400px;
+}
+
+.hero__title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 37px;
+  text-align: left;
+  text-transform: unset;
+  line-height: 50px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  gap: 100px;
+}
+
+.hero__link {
+  max-width: 300px;
+}
+
+.scroll-down {
+  display: flex;
+  font-size: 15px;
+  text-align: right;
+  gap: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.scrolldown--text strong{
+  font-weight: 600;
+}
+
+.scrolldown-desktop {
+  width: 16px;
+  height: 30px;
+}
+
+.scrolldown-mobile {
+  display: none;
+}

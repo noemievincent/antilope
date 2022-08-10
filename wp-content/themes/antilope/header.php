@@ -16,16 +16,13 @@
     <link rel="stylesheet" type="text/css" href="<?= ant_mix('css/style.css'); ?>"/>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?= is_home() ? 'class= "home"' : ''?>>
 <header id="header">
     <h1 class="header__title hidden">Antilope</h1>
     <div class="header__bar">
-        <a href="<?= home_url() ?>">
-            <svg version="1.1" id="header__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a class="header__link" href="<?= home_url() ?>">
+            <svg version="1.1" class="header__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 42 48" height="48" width="42" xml:space="preserve">
-                <style type="text/css">
-                    .header__logo{fill:#FFFFFF;}
-                </style>
                 <path class="header__logo" d="M40.3,38.9c-0.2,0.1-0.3,0.2-0.5,0.2c-0.4-0.5-0.8-1-1.1-1.5c-0.6-0.8-1.5-0.9-2.3-0.3
                 c-1.4,1.1-2.8,2.1-4.2,3.2c-0.8,0.6-0.9,1.5-0.3,2.3c0.4,0.5,0.7,1,1.1,1.6c-0.1,0.1-0.2,0.2-0.3,0.3c0.4,0.5,0.7,1,1.1,1.5
                 c2.6-1.9,5.1-3.9,7.7-5.8C41,39.9,40.6,39.4,40.3,38.9z"/>
@@ -74,7 +71,7 @@
 		        'walker'     => new PrimaryMenuWalker(),
 	        ]); ?>
         </nav>
-        <div class="nav__lang lang">
+        <div class="header__lang lang">
 		    <?php foreach (pll_the_languages(['raw' => true]) as $code => $locale) : ?>
                 <a href="<?= $locale['url']; ?>" lang="<?= $locale['locale']; ?>" hreflang="<?= $locale['locale']; ?>"
                    class="lang__locale <?= $locale['current_lang'] ? ' lang__locale--current' : '' ?>"
@@ -86,9 +83,6 @@
 <a href="#" class="header__scrollup">
     <svg version="1.1" class="scrollup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 19.8 22.9" xml:space="preserve">
-                <style type="text/css">
-                    .up{fill:none;stroke:#FFFFFF;stroke-width:2.0833;stroke-linecap:round;stroke-linejoin:round;}
-                </style>
         <path class="up" d="M1,10.2L9.9,1l8.9,9.1 M9.9,21.9V1V21.9z"/>
     </svg>
 </a>

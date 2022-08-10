@@ -4,7 +4,7 @@
         <section class="singleModule__header" aria-labelledby="singleModule">
             <h2 class="singleModule__title" id="singleModule" aria-level="2"><?= get_the_title(); ?></h2>
             <a href="<?= get_post_type_archive_link('module') ?>"
-               class="singleModule__return"><?= __('Retour aux modules', 'ant') ?></a>
+               class="singleModule__return secondary--btn"><?= __('Retour aux modules', 'ant') ?></a>
         </section>
         <div class="singleModule__presentation presentation">
             <div class="presentation__left">
@@ -18,6 +18,7 @@
                 <img src="<?= get_field('main_picture'); ?>" alt="" class="presentation__image">
             </figure>
         </div>
+        <hr>
         <div class="singleModule__about">
             <div class="singleModule__features features">
                 <h4 class="features__title"><?= __('Caractéristiques', 'ant') ?></h4>

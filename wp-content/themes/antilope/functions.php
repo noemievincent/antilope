@@ -254,14 +254,13 @@ function ant_mix($path) {
 	return get_stylesheet_directory_uri() . '/public' . $manifest[$path];
 }
 
-
-//Ajouter les liens de navigations transversales entre les projets
+//Ajouter les liens de navigations transversales entre les modules
 function ant_previous_post_link(string $post_type) {
 	if( get_adjacent_post(false, '', true) ) {
 		previous_post_link('%link', '%title');
 	} else {
 		$first = new WP_Query('post_type=module&posts_per_page=1&order=DESC'); $first->the_post();
-		echo '<a href="' . get_permalink() . '" rel="prev">' . get_the_title() .'</a>';
+		echo '<a class="singleModule__link prev secondary--btn" href="' . get_permalink() . '" rel="prev">' . get_the_title() .'</a>';
 		wp_reset_query();
 	};
 }
@@ -271,7 +270,20 @@ function ant_next__post_link(string $post_type) {
 		next_post_link('%link', '%title');
 	} else {
 		$last = new WP_Query('post_type=module&posts_per_page=1&order=ASC'); $last->the_post();
-		echo '<a href="' . get_permalink() . '" rel="next">' . get_the_title() .'</a>';
+		echo '<a class="singleModule__link next secondary--btn" href="' . get_permalink() . '" rel="next">' . get_the_title() .'</a>';
 		wp_reset_query();
 	};
 }
+
+// Ajouter des classes CSS aux liens de navigations transversales générés par WordPress
+function posts_link_next_class($format){
+	$format = str_replace('href=', 'class="singleModule__link next secondary--btn" href=', $format);
+	return $format;
+}
+add_filter('next_post_link', 'posts_link_next_class');
+
+function posts_link_prev_class($format) {
+	$format = str_replace('href=', 'class="singleModule__link prev secondary--btn" href=', $format);
+	return $format;
+}
+add_filter('previous_post_link', 'posts_link_prev_class');

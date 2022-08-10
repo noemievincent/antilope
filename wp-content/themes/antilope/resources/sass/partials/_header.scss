@@ -1,0 +1,85 @@
+header {
+  background-color: rgba(23, 47, 14, 0.5);
+  padding: 8px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 15;
+}
+
+header a {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  transition: color ease-in-out 0.2s;
+}
+
+.header__svg {
+  width: 35px;
+  height: 48px;
+}
+
+.header__menu, .nav__container, .header__lang {
+  display: flex;
+  gap: 8px;
+}
+
+.header__menu {
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__container {
+  gap: 70px;
+}
+
+.nav__item--current, .lang__locale--current {
+  font-weight: 600;
+}
+
+.nav__link:hover, .nav__link:focus, .lang__locale:hover, .lang__locale:focus {
+  color: #172F0E;
+}
+
+.home .nav__link:hover, .home .nav__link:focus, .home .lang__locale:hover, .home .lang__locale:focus {
+  color: #8AAB7C;
+}
+
+.header__logo {
+  transition: fill ease-in-out 0.2s;
+}
+
+.header__svg:hover .header__logo, .header__svg:focus .header__logo {
+  fill: #172F0E;
+}
+
+.home .header__svg:hover .header__logo, .home .header__svg:focus .header__logo {
+  fill: #8AAB7C;
+}
+
+.scrollup {
+  display: none;
+  width: 35px;
+  height: 35px;
+  padding: 16px;
+  border-radius: 50px;
+  background-color: #8AAB7C;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.scrollup:hover, .scrollup:focus {
+  opacity: 1;
+}
+
+.toggle, .burgermenu {
+  display: none;
+}
