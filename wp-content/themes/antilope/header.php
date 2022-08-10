@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="<?= ant_mix('css/style.css'); ?>"/>
 	<?php wp_head(); ?>
 </head>
-<body <?= is_home() ? 'class= "home"' : ''?>>
+<body class="<?= is_home() ? 'home' : 'sub'?>">
 <header id="header">
     <h1 class="header__title hidden">Antilope</h1>
     <div class="header__bar">

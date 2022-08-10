@@ -41,7 +41,7 @@
                                 <p class="address__meta" itemprop="postalCode"><?= $address['city'] ?></p>
                             </div>
                             <p class="coord__mail"><?=get_field('mail') ?></p>
-                            <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
+                            <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Vers le site de l‘:name', 'ant')); ?></a>
                         </div>
                     <?php endwhile; endif; ?>
                 </div>

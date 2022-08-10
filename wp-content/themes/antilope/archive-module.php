@@ -2,7 +2,7 @@
 <main>
     <section class="modules" aria-labelledby="modules">
         <h2 class="modules__title" id="modules" aria-level="2"><?= __('Nos modules', 'ant'); ?></h2>
-        <div class="modules__container slider">
+        <div class="modules__container">
             <?php if (have_posts()): while (have_posts()): the_post();
                 ant_include('module');
             endwhile;

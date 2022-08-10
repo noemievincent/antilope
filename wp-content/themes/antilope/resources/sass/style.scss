@@ -6,6 +6,7 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/home";
+@import "partials/article";
 
 html {
   scroll-behavior: smooth;
@@ -17,11 +18,21 @@ html {
 
 body {
   overflow-x: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
-main {
-  margin: 0 40px 100px;
+* {
+  box-sizing: border-box;
+}
+
+.sub main, .home__content {
+  margin: 120px 60px 100px;
   //text-align: right;
+}
+
+.sub h2 {
+  margin-bottom: 60px;
 }
 
 a {
@@ -44,6 +55,10 @@ h3 {
 hr {
   border-top: 2px solid #D9E0CA;
   margin: 60px 0;
+}
+
+.sub h2{
+  //margin-top: 30px;
 }
 
 .hidden { //10

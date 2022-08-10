@@ -4,9 +4,11 @@ $date = DateTime::createFromFormat('Y-m-d', $date_string);
 ?>
 
 <article class="article" aria-labelledby="<?= get_post_field('post_name'); ?>">
-	<div class="article__card">
+    <div class="article__card">
         <div class="article__container">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="article__img">
+            <div class="article__header">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="article__img">
+            </div>
             <div class="article__content">
                 <h3 class="article__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>
                 <?php if (get_field('date')):?>
@@ -18,5 +20,5 @@ $date = DateTime::createFromFormat('Y-m-d', $date_string);
             </div>
         </div>
         <a href="<?= get_field('link') ?>" class="article__link btn"><?= __('Lire l‘article', 'ant'); ?></a>
-	</div>
+    </div>
 </article>

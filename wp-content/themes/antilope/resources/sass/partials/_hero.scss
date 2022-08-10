@@ -1,12 +1,10 @@
 .hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../img/hero.jpg") no-repeat;
-  //background: url("../../img/hero.jpg") no-repeat;
   background-size: cover;
-  height: 100vh;
-  max-height: 980px;
+  height: 180vh;
   color: #FFFFFF;
   padding: 250px 60px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 }
 
 .hero__title {
@@ -26,7 +24,7 @@
 }
 
 .hero__link {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .scroll-down {
