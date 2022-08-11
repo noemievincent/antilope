@@ -21,8 +21,6 @@ html {
 }
 
 body {
-  //overflow-x: hidden;
-  width: 100vw;
   display: grid;
   grid-template-rows: auto 1fr;
   color: #172F0E;
@@ -66,17 +64,16 @@ hr {
   background: #8AAB7C;
 }
 
-.sub main, .home__content {
-  margin: em(120, 16) em(60, 16) em(100, 16);
-  //text-align: right;
+.home__content {
+  margin: em(220, 16) em(60, 16) em(100, 16);
 }
 
-.sub h2 {
-  margin-bottom: em(30, 50);
+.sub-pages main {
+  margin: em(100, 16) em(60, 16) em(100, 16);
 }
 
-.sub h2{
-  //margin-top: 30px;
+.sub-pages h2 {
+  margin-bottom: em(40, 50);
 }
 
 .hidden {

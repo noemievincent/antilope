@@ -20,13 +20,23 @@
   background-color: #5D7353;
 }
 
-.secondary--btn, .form__checklabel a {
+.secondary--btn, .form__checklabel a, .coord__link {
   color: #8AAB7C;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   transition: color ease-in-out 0.2s;
 }
 
-.secondary--btn:hover, .secondary--btn:focus, .form__checklabel a:hover, .form__checklabel a:focus {
+.secondary--btn:hover, .secondary--btn:focus, .form__checklabel a:hover, .form__checklabel a:focus, .coord__link:hover, .coord__link:focus {
   color: #526649;
+}
+
+.arrow {
+  transition: padding-right ease-in-out 0.3s;
+}
+
+.arrow:hover {
+  background: url("../../img/arrow-next.svg") no-repeat right;
+  background-size: contain;
+  padding-right: em(30, 16);
 }

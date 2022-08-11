@@ -22,19 +22,20 @@
                 </div>
             <?php endwhile; endif; ?>
         </section>
-        <section class="contact" aria-labelledby="contact">
-            <h3 class="contact__title" id="contact"><?= __('Des questions ?', 'ant'); ?></h3>
-            <div class="contact__card">
-                <div class="contact__content">
-                    <p>Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
+        <section class="contact-card" aria-labelledby="contact">
+            <h3 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h3>
+            <div class="contact-card__card">
+                <div class="contact-card__content">
+                    <p class="contact-card__meta">Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
-                       class="contact__link btn"><?= __('Contactez-nous', 'ant') ?></a>
+                       class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>
-                <div class="contact__coords coord">
-                    <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
-                    <?php $address = get_field('address');?>
+                <div class="contact-card__separator"></div>
+                <div class="contact-card__coords coord">
+				    <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
+					    <?php $address = get_field('address');?>
                         <div class="coord__content">
-                            <h4 class="coord__title"><?= get_the_title(); ?></h4>
+                            <h3 class="coord__title"><?= get_the_title(); ?></h3>
                             <div class="address" itemscope itemtype="https://schema.org/PostalAddress">
                                 <p class="address__meta" itemprop="name"><?= $address['name'] ?></p>
                                 <p class="address__meta" itemprop="streetAddress"><?= $address['street'] ?></p>
@@ -43,7 +44,7 @@
                             <p class="coord__mail"><?=get_field('mail') ?></p>
                             <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Vers le site de l‘:name', 'ant')); ?></a>
                         </div>
-                    <?php endwhile; endif; ?>
+				    <?php endwhile; endif; ?>
                 </div>
             </div>
         </section>

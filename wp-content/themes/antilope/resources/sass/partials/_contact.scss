@@ -1,11 +1,82 @@
 @import "form";
 
+.contact-card__card {
+  background-color: #FFFFFF;
+  box-shadow: 0 em(15, 16) em(35, 16) rgba(23, 47, 14, 0.15);
+  border-radius: em(20, 16);
+  padding: em(40, 16) em(100, 16) em(40, 16) em(60, 16);
+  min-height: em(350, 16);
+  display: grid;
+  grid-template-columns: em(650, 16) 1fr 1fr;
+}
+
+.contact-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: em(480, 16);
+  grid-column: 1;
+}
+
+.contact-card__meta {
+  line-height: em(25, 16);
+}
+
+.contact-card__link {
+  max-width: em(300, 20);
+}
+
+.contact-card__coords, .coord__content, .contact__coords {
+  display: flex;
+  flex-direction: column;
+  gap: em(28, 16);
+}
+
+.contact-card__coords {
+  justify-content: space-between;
+  grid-column: 4;
+}
+
+.contact-card__separator {
+  height: 100%;
+  width: 2px;
+  background-color: #D9E0CA;
+}
+
+.contact-card .coord__content {
+  gap: em(10, 16);
+}
+
+.contact .coord__content {
+  gap: em(13, 16);
+}
+
+.coord__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: em(20, 16);
+}
+
+.coord__link {
+  text-transform: unset;
+  font-weight: 700;
+}
+
+.address {
+  line-height: em(20, 16);
+}
+
+.coord__socials {
+  display: flex;
+  gap: em(12, 16);
+}
+
 .has_2_columns {
   display: grid;
   grid-template-columns: em(500, 16) em(100, 16) 1fr;
 }
 
-.sub .contact__separator {
+.sub-pages .contact__separator {
   justify-self: center;
 }
 
@@ -14,6 +85,6 @@
   height: em(25, 16);
 }
 
-.sub .contact__coords {
+.sub-pages .contact__coords {
   gap: em(30, 16);
 }

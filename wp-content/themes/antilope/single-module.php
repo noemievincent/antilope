@@ -4,18 +4,18 @@
         <section class="singleModule__header" aria-labelledby="singleModule">
             <h2 class="singleModule__title" id="singleModule" aria-level="2"><?= get_the_title(); ?></h2>
             <a href="<?= get_post_type_archive_link('module') ?>"
-               class="singleModule__return secondary--btn"><?= __('Retour aux modules', 'ant') ?></a>
+               class="singleModule__return secondary--btn arrow"><?= __('Retour aux modules', 'ant') ?></a>
         </section>
-        <div class="singleModule__presentation presentation">
-            <div class="presentation__left">
-                <p class="presentation__content">
+        <div class="singleModule__presentation pres">
+            <div class="pres__left">
+                <p class="pres__content">
                     <?= get_the_content(); ?>
                 </p>
                 <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
-                   class="presentation__contact btn"><?= __('Nous contacter', 'ant') ?></a>
+                   class="pres__contact btn"><?= __('Nous contacter', 'ant') ?></a>
             </div>
-            <figure class="presentation__fig">
-                <img src="<?= get_field('main_picture'); ?>" alt="" class="presentation__image">
+            <figure class="pres__fig">
+                <img src="<?= get_field('main_picture'); ?>" alt="" class="pres__image">
             </figure>
         </div>
         <hr>

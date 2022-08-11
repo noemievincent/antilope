@@ -51,9 +51,7 @@
                                 <h3 class="module__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?= str_replace(':title', get_the_title(), __('Voir le module :title', 'ant')); ?>" class="module__svg style-svg">
                             </div>
-                            <div class="module__cta btn">
-                                <a href="<?= get_the_permalink(); ?>" class="module__link"><?= __('Voir le module', 'ant') ?></a>
-                            </div>
+                            <a href="<?= get_the_permalink(); ?>" class="module__link btn"><?= __('Voir le module', 'ant') ?></a>
                         </div>
                     </article>
                 <?php endwhile; else: ?>
@@ -61,22 +59,22 @@
                 <?php endif; ?>
             </div>
             <a href="<?= get_post_type_archive_link('module'); ?>"
-               class="modules__link secondary--btn"> <?= __('Voir tous les modules', 'ant') ?></a>
+               class="modules__link secondary--btn arrow"> <?= __('Voir tous les modules', 'ant') ?></a>
         </section>
         <hr>
         <div class="iframe__container">
             <iframe allowfullscreen class="video" src="https://www.youtube.com/embed/hOlzReqeewQ"></iframe>
         </div>
-        <section class="contact" aria-labelledby="contact">
-            <h2 class="contact__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h2>
-            <div class="contact__card">
-                <div class="contact__content">
-                    <p>Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
+        <section class="contact-card" aria-labelledby="contact">
+            <h2 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h2>
+            <div class="contact-card__card">
+                <div class="contact-card__content">
+                    <p class="contact-card__meta">Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
-                       class="contact__link btn"><?= __('Contactez-nous', 'ant') ?></a>
+                       class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>
-                <div class="contact__separator"></div>
-                <div class="contact__coords coord">
+                <div class="contact-card__separator"></div>
+                <div class="contact-card__coords coord">
                     <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
                         <?php $address = get_field('address');?>
                         <div class="coord__content">
@@ -104,7 +102,7 @@
                 <?php endif; ?>
             </div>
             <a href="<?= get_post_type_archive_link('module'); ?>"
-               class="articles__link secondary--btn"> <?= __('Voir tous les modules', 'ant') ?></a>
+               class="articles__link secondary--btn arrow"> <?= __('Voir tous les modules', 'ant') ?></a>
         </section>
     </div>
 </main>

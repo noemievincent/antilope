@@ -32,6 +32,10 @@ footer {
   transition: color ease-in-out 0.2s;
 }
 
+.footer a:hover {
+  color: #8AAB7C;
+}
+
 .footer__logos {
   display: flex;
   flex-direction: row-reverse;

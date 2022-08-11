@@ -1,5 +1,5 @@
 .home .articles {
-  margin-top: em(120, 16);
+  margin-top: em(80, 16);
 }
 
 .articles__container {
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   gap: em(100, 16);
-  margin-bottom: em(50, 16);
+  margin-bottom: em(20, 16);
 }
 
 .article {
@@ -102,19 +102,19 @@
   display: -webkit-box;
 }
 
-.article__cta {
-  z-index: 5;
-  grid-column: 2/6;
-  padding: em(14, 20) em(40, 20);
-  margin-top: em(-26, 20);
-  letter-spacing: unset;
-}
-
 .article__link {
+  font-size: em(13, 16);
   color: #FFFFFF;
-  font-size: em(13, 20);
   text-transform: uppercase;
   text-decoration: none;
+  margin-top: em(-26, 13);
+  padding: em(14, 13) em(40, 13);
+  z-index: 5;
+  grid-column: 2/6;
+}
+
+.sub-pages .article__link {
+  font-size: em(14, 16);
 }
 
 
