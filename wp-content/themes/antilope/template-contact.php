@@ -29,7 +29,7 @@
                         <div class="form__field">
                             <label for="email" class="form__label"><?= __('Votre adresse e-mail', 'ant') ?></label>
                             <?= isset($_SESSION['contact_form_feedback']['errors']['email']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['email'] . '</p>' : '' ?>
-                            <input type="email" name="email" id="email" placeholder="lucie-breton@gmail.com"
+                            <input type="email" name="email" id="email" placeholder="drew-sally@example.com"
                                    class="form__input">
                         </div>
                         <div class="form__field">
@@ -46,7 +46,7 @@
                         <div class="form__field">
                             <label for="message" class="form__label"><?= __('Votre message', 'ant') ?></label>
                             <?= isset($_SESSION['contact_form_feedback']['errors']['message']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['message'] . '</p>' : '' ?>
-                            <textarea name="message" id="message" cols="30" rows="12" class="form__input"
+                            <textarea name="message" id="message" cols="30" rows="12" class="form__textarea"
                                       placeholder="<?= __('Bonjour,...', 'ant') ?>"></textarea>
                         </div>
                         <div class="form__field">
@@ -67,31 +67,30 @@
                        class="form__success"><?= __('Merci ! Votre message a bien été envoyé.', 'ant') ?></p>
                     <?php unset($_SESSION['contact_form_feedback']);endif; ?>
             </section>
+            <div class="contact__separator"></div>
             <section class="contact__coords coords" aria-labelledby="coords">
                 <h3 class="coords__title hidden" id="coords"><?= __('Coordonnées', 'ant'); ?></h3>
-                <div class="contact__coords coord">
-		            <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
-			            <?php $address = get_field('address');?>
-                        <div class="coord__content">
-                            <h4 class="coord__title"><?= get_the_title(); ?></h4>
-                            <div class="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                <p class="address__meta" itemprop="name"><?= $address['name'] ?></p>
-                                <p class="address__meta" itemprop="streetAddress"><?= $address['street'] ?></p>
-                                <p class="address__meta" itemprop="postalCode"><?= $address['city'] ?></p>
-                            </div>
-                            <p class="coord__mail"><?=get_field('mail') ?></p>
-                            <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
-                            <div class="coord__socials">
-                                <a href="<?=get_field('first_social_link') ?>" class="coord__social">
-                                    <img src="<?=get_field('first_social_logo') ?>" class="coord__svg style-svg">
-                                </a>
-                                <a href="<?=get_field('second_social_link') ?>" class="coord__social">
-                                    <img src="<?=get_field('second_social_logo') ?>" class="coord__svg style-svg">
-                                </a>
-                            </div>
+                <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
+                    <?php $address = get_field('address');?>
+                    <div class="coord__content">
+                        <h4 class="coord__title"><?= get_the_title(); ?></h4>
+                        <div class="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <p class="address__meta" itemprop="name"><?= $address['name'] ?></p>
+                            <p class="address__meta" itemprop="streetAddress"><?= $address['street'] ?></p>
+                            <p class="address__meta" itemprop="postalCode"><?= $address['city'] ?></p>
                         </div>
-		            <?php endwhile; endif; ?>
-                </div>
+                        <p class="coord__mail"><?=get_field('mail') ?></p>
+                        <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
+                        <div class="coord__socials">
+                            <a href="<?=get_field('first_social_link') ?>" class="coord__social">
+                                <img src="<?=get_field('first_social_logo') ?>" class="coord__svg style-svg">
+                            </a>
+                            <a href="<?=get_field('second_social_link') ?>" class="coord__social">
+                                <img src="<?=get_field('second_social_logo') ?>" class="coord__svg style-svg">
+                            </a>
+                        </div>
+                    </div>
+                <?php endwhile; endif; ?>
             </section>
         </div>
     </section>

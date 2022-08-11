@@ -13,32 +13,30 @@ $browser-context: 16; // Default
 @import "partials/footer";
 @import "partials/home";
 @import "partials/article";
+@import "partials/module";
+@import "partials/contact";
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  //overflow-x: hidden;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr;
   color: #172F0E;
   background-color: #FCF9F3;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 
-body {
-  overflow-x: hidden;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.sub main, .home__content {
-  margin: em(160, 16) em(60, 16) em(100, 16);
-  //text-align: right;
-}
-
-.sub h2 {
-  margin-bottom: em(60, 50);
+strong {
+  font-weight: 600;
 }
 
 a {
@@ -48,9 +46,9 @@ a {
 
 h2, h3 {
   font-size: em(50, 16);
+  font-weight: 700;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
 }
 
 h3 {
@@ -63,11 +61,25 @@ hr {
   margin: em(60, 16) 0;
 }
 
+::selection {
+  color: #FFFFFF;
+  background: #8AAB7C;
+}
+
+.sub main, .home__content {
+  margin: em(120, 16) em(60, 16) em(100, 16);
+  //text-align: right;
+}
+
+.sub h2 {
+  margin-bottom: em(30, 50);
+}
+
 .sub h2{
   //margin-top: 30px;
 }
 
-.hidden { //10
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -5,7 +5,7 @@
         <h2 class="about__title" id="about" aria-level="2"><?= get_the_title(); ?></h2>
         <section class="project" aria-labelledby="project">
             <h3 class="project__title" id="project"><?= __('Le projet', 'ant'); ?></h3>
-            <p class="project__content"><?php the_content(); ?></p>
+            <p class="project__content"><?=  get_the_content(); ?></p>
         </section>
         <section class="partner" aria-labelledby="partner">
             <h3 class="partner__title" id="partner"><?= __('Les partenaires', 'ant'); ?></h3>

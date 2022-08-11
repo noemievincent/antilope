@@ -1,0 +1,59 @@
+.home .modules__cards {
+  display: flex;
+  justify-content: center;
+  //gap: em(100, 16);
+  margin-bottom: em(90, 16);
+}
+
+.home .module {
+  text-align: left;
+  max-width: em(400, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: em(20, 16);
+  flex: 1;
+}
+
+.home .module__card {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  min-width: em(280, 16);
+}
+
+.home .module__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-color: #FFFFFF;
+  border-radius: em(20, 16);
+  box-shadow: 0 em(15, 16) em(35, 16) rgba(23, 47, 14, 0.15);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: em(10, 16); /*10/16*/
+  padding: em(20, 16) em(40, 16) em(60, 16);
+}
+
+.home .module__svg {
+  max-width: em(220, 16);
+  max-height: em(300, 16);
+}
+
+.home .module__cta {
+  z-index: 5;
+  grid-column: 2/6;
+  padding: em(14, 20) em(38, 20);
+  margin-top: em(-20, 20);
+  letter-spacing: unset;
+}
+
+.home .module__link {
+  color: #FFFFFF;
+  font-size: em(12, 20);
+  //max-width: 230px;
+}

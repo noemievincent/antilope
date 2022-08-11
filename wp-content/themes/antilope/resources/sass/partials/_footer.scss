@@ -6,7 +6,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: em(70, 16) em(370, 16);
+  //padding: em(70, 16) em(370, 16);
+  padding: em(70, 16) 0;
   gap: em(50, 16);
 
 }

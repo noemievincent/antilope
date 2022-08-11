@@ -1,0 +1,19 @@
+@import "form";
+
+.has_2_columns {
+  display: grid;
+  grid-template-columns: em(500, 16) em(100, 16) 1fr;
+}
+
+.sub .contact__separator {
+  justify-self: center;
+}
+
+.coord__svg {
+  width: em(25, 16);
+  height: em(25, 16);
+}
+
+.sub .contact__coords {
+  gap: em(30, 16);
+}
