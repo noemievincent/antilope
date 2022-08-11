@@ -1,10 +1,14 @@
 footer {
   background-color: #D9E0CA;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 370px;
-  gap: 50px;
+  padding: em(70, 16) em(370, 16);
+  gap: em(50, 16);
+
 }
 
 .footer__logo {
@@ -18,7 +22,8 @@ footer {
 .footer__pages {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  //width: 100%;
+  gap: em(50, 16);
 }
 
 .footer a {
@@ -30,9 +35,9 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 40px;
+  gap: em(40, 16);
 }
 
 .footer__img {
-  max-height: 98px;
+  max-height: em(98, 16);
 }

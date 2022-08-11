@@ -1,16 +1,19 @@
 .btn {
   color: #FFFFFF;
   background-color: #8AAB7C;
-  font-size: 20px;
-  padding: 18px 40px;
-  border-radius: 50px;
+  font-size: em(20, 16);
+  padding: em(18, 20) em(40, 20);
+  border-radius: em(50, 20);
   border: none;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: em(1, 20);
   transition: background-color ease-in-out 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover, .btn:focus {

@@ -1,10 +1,10 @@
 header {
   background-color: rgba(23, 47, 14, 0.5);
-  padding: 8px 22px;
+  padding: em(8, 16) em(22, 16);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: em(30, 16);
   position: fixed;
   left: 0;
   right: 0;
@@ -14,18 +14,18 @@ header {
 header a {
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: em(17, 16);
   transition: color ease-in-out 0.2s;
 }
 
 .header__svg {
-  width: 35px;
-  height: 48px;
+  width: em(35, 17);
+  height: em(48,17);
 }
 
 .header__menu, .nav__container, .header__lang {
   display: flex;
-  gap: 8px;
+  gap: em(8, 16);
 }
 
 .header__menu {
@@ -35,7 +35,7 @@ header a {
 }
 
 .nav__container {
-  gap: 70px;
+  gap: em(70, 16);
 }
 
 .nav__item--current, .lang__locale--current {
@@ -64,15 +64,15 @@ header a {
 
 .scrollup {
   display: none;
-  width: 35px;
-  height: 35px;
-  padding: 16px;
-  border-radius: 50px;
+  width: em(35, 16);
+  height: em(35, 16);
+  padding: em(16, 16);
+  border-radius: em(50, 16);
   background-color: #8AAB7C;
   opacity: 0.7;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: em(30, 16);
+  right: em(30, 16);
   transition: opacity ease-in-out 0.2s;
 }
 

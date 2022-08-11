@@ -45,12 +45,16 @@
             <div class="modules__cards">
                 <?php
                 if(($modules = ant_get_modules(3))->have_posts()): while($modules->have_posts()): $modules->the_post()?>
-                    <article class="module__card" aria-labelledby="<?= get_post_field('post_name'); ?>">
-                        <div class="module__content">
-                            <h3 class="module__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>
-                            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?= str_replace(':title', get_the_title(), __('Voir le module :title', 'ant')); ?>" class="module__svg style-svg">
+                    <article class="module" aria-labelledby="<?= get_post_field('post_name'); ?>">
+                        <div class="module__card">
+                            <div class="module__content">
+                                <h3 class="module__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?= str_replace(':title', get_the_title(), __('Voir le module :title', 'ant')); ?>" class="module__svg style-svg">
+                            </div>
+                            <div class="module__cta btn">
+                                <a href="<?= get_the_permalink(); ?>" class="module__link"><?= __('Voir le module', 'ant') ?></a>
+                            </div>
                         </div>
-                        <a href="<?= get_the_permalink(); ?>" class="module__link btn"><?= __('Voir le module', 'ant') ?></a>
                     </article>
                 <?php endwhile; else: ?>
                     <p class="modules__empty"><?= __('Il n’y a pas de modules à vous présenter...', 'ant'); ?></p>

@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 @import "reset";
 
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 @import "partials/svg";
 @import "partials/button";
 @import "partials/header";
@@ -27,12 +33,12 @@ body {
 }
 
 .sub main, .home__content {
-  margin: 120px 60px 100px;
+  margin: em(160, 16) em(60, 16) em(100, 16);
   //text-align: right;
 }
 
 .sub h2 {
-  margin-bottom: 60px;
+  margin-bottom: em(60, 50);
 }
 
 a {
@@ -41,20 +47,20 @@ a {
 }
 
 h2, h3 {
-  font-size: 50px;
+  font-size: em(50, 16);
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: em(30, 16);
   font-weight: 500;
 }
 
 hr {
   border-top: 2px solid #D9E0CA;
-  margin: 60px 0;
+  margin: em(60, 16) 0;
 }
 
 .sub h2{
