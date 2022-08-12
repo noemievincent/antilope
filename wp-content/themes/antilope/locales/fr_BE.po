@@ -1,0 +1,274 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Antilope\n"
+"POT-Creation-Date: 2022-08-12 10:13+0200\n"
+"PO-Revision-Date: 2022-08-12 10:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: Noémie\n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:11
+msgid "Page non trouvée"
+msgstr "Page non trouvée"
+
+#: 404.php:13
+msgid "l’accueil"
+msgstr "l’accueil"
+
+#: 404.php:13
+msgid "Retourner à :home"
+msgstr "Retourner à :home"
+
+#: Forms/Validators/AcceptedValidator.php:8
+msgid "Veuillez cocher la case ci-dessus pour continuer."
+msgstr "Veuillez cocher la case ci-dessus pour continuer."
+
+#: Forms/Validators/EmailValidator.php:8
+msgid "Merci de fournir une adresse mail valide."
+msgstr "Merci de fournir une adresse mail valide."
+
+#: Forms/Validators/RequiredValidator.php:7
+msgid "Ce champ ne peut pas être vide."
+msgstr "Ce champ ne peut pas être vide."
+
+#: archive-article.php:4 index.php:95
+msgid "Publications"
+msgstr "Publications"
+
+#: archive-article.php:10
+msgid "Il n’y a pas de publications à vous présenter..."
+msgstr "Il n’y a pas de publications à vous présenter..."
+
+#: archive-module.php:4
+msgid "Nos modules"
+msgstr "Nos modules"
+
+#: archive-module.php:10 index.php:58
+msgid "Il n’y a pas de modules à vous présenter..."
+msgstr "Il n’y a pas de modules à vous présenter..."
+
+#: footer.php:3
+msgid "Pied de page"
+msgstr "Pied de page"
+
+#: header.php:66
+msgid "Navigation principale"
+msgstr "Navigation principale"
+
+#: index.php:4
+msgid "Vers un système bon marché de mesure des polluants atmosphériques"
+msgstr "Vers un système bon marché de mesure des polluants atmosphériques"
+
+#: index.php:6
+msgid "Découvrir Antilope"
+msgstr "Découvrir Antilope"
+
+#: index.php:9
+msgid "Faites défiler la page"
+msgstr "Faites défiler la page"
+
+#: index.php:9
+msgid "pour en savoir plus"
+msgstr "pour en savoir plus"
+
+#: index.php:33
+msgid "Présentation"
+msgstr "Présentation"
+
+#: index.php:36
+msgid ""
+"L’air joue un rôle primordial pour la vie telle que nous la connaissons sur "
+"terre. Une mauvaise qualité de l’air a une incidence négative sur la santé "
+"humaine et sur l’environnement au sens large. Ses conséquences sont non "
+"seulement de nature sanitaire, écologique et économique mais aussi du point "
+"de vue humain: disposer d’un air de qualité et sain doit être un droit "
+"fondamental."
+msgstr ""
+"L’air joue un rôle primordial pour la vie telle que nous la connaissons sur "
+"terre. Une mauvaise qualité de l’air a une incidence négative sur la santé "
+"humaine et sur l’environnement au sens large. Ses conséquences sont non "
+"seulement de nature sanitaire, écologique et économique mais aussi du point "
+"de vue humain: disposer d’un air de qualité et sain doit être un droit "
+"fondamental."
+
+#: index.php:38
+msgid "En savoir plus"
+msgstr "En savoir plus"
+
+#: index.php:44
+msgid "Modules"
+msgstr "Modules"
+
+#: index.php:52 partials/module.php:10
+msgid "Voir le module :title"
+msgstr "Voir le module :title"
+
+#: index.php:54 partials/module.php:7
+msgid "Voir le module"
+msgstr "Voir le module"
+
+#: index.php:62 index.php:105
+msgid "Voir tous les modules"
+msgstr "Voir tous les modules"
+
+#: index.php:69 index.php:74 single-module.php:49 template-about.php:26
+#: template-about.php:31
+msgid "Contactez-nous"
+msgstr "Contactez-nous"
+
+#: index.php:72 template-about.php:29
+msgid ""
+"Pour toutes questions ou demandes au sujet du projet ou d’un module, "
+"n’hésitez pas nous contacter."
+msgstr ""
+"Pour toutes questions ou demandes au sujet du projet ou d’un module, "
+"n’hésitez pas nous contacter."
+
+#: index.php:88 template-about.php:45
+msgid "Vers le site de l‘:name"
+msgstr "Vers le site de l‘:name"
+
+#: index.php:101
+msgid "Il n’y a pas d‘articles à vous présenter..."
+msgstr "Il n’y a pas d‘articles à vous présenter..."
+
+#: partials/article.php:17
+#| msgid "Pied de page"
+msgid "Pas de date"
+msgstr "Pas de date"
+
+#: partials/article.php:22
+msgid "Lire l‘article"
+msgstr "Lire l‘article"
+
+#: single-module.php:7
+msgid "Retour aux modules"
+msgstr "Retour aux modules"
+
+#: single-module.php:15
+msgid "Nous contacter"
+msgstr "Nous contacter"
+
+#: single-module.php:25
+msgid "Caractéristiques"
+msgstr "Caractéristiques"
+
+#: single-module.php:30
+msgid "Polluants mesurés"
+msgstr "Polluants mesurés"
+
+#: single-module.php:34
+msgid "Voir les résultats en direct"
+msgstr "Voir les résultats en direct"
+
+#: template-about.php:7
+msgid "Le projet"
+msgstr "Le projet"
+
+#: template-about.php:11
+msgid "Les partenaires"
+msgstr "Les partenaires"
+
+#: template-about.php:17 template-contact.php:83
+msgid "Visiter le site de l‘:name"
+msgstr "Visiter le site de l‘:name"
+
+#: template-contact.php:8
+msgid "Formulaire de contact"
+msgstr "Formulaire de contact"
+
+#: template-contact.php:13
+msgid "Oups ! Il y a des erreurs dans le formulaire"
+msgstr "Oups ! Il y a des erreurs dans le formulaire"
+
+#: template-contact.php:17
+msgid "Votre nom"
+msgstr "Votre nom"
+
+#: template-contact.php:23
+msgid "Votre prénom"
+msgstr "Votre prénom"
+
+#: template-contact.php:30
+msgid "Votre adresse e-mail"
+msgstr "Votre adresse e-mail"
+
+#: template-contact.php:36
+msgid "Vous êtes"
+msgstr "Vous êtes"
+
+#: template-contact.php:39
+msgid "un étudiant"
+msgstr "un étudiant"
+
+#: template-contact.php:40
+msgid "une ville"
+msgstr "une ville"
+
+#: template-contact.php:41
+msgid "un scientifique"
+msgstr "un scientifique"
+
+#: template-contact.php:42
+msgid "un professeur"
+msgstr "un professeur"
+
+#: template-contact.php:43
+msgid "autre"
+msgstr "autre"
+
+#: template-contact.php:47
+msgid "Votre message"
+msgstr "Votre message"
+
+#: template-contact.php:50
+msgid "Bonjour,..."
+msgstr "Bonjour,..."
+
+#: template-contact.php:56
+msgid "conditions générales d’utilisations"
+msgstr "conditions générales d’utilisations"
+
+#: template-contact.php:56
+msgid "J’accepte les :conditions"
+msgstr "J’accepte les :conditions"
+
+#: template-contact.php:62
+msgid "Envoyer"
+msgstr "Envoyer"
+
+#: template-contact.php:67
+msgid "Merci ! Votre message a bien été envoyé."
+msgstr "Merci ! Votre message a bien été envoyé."
+
+#: template-contact.php:72
+msgid "Coordonnées"
+msgstr "Coordonnées"
+
+#: template-legals.php:9
+msgid "Informations légales"
+msgstr "Informations légales"
+
+#: template-legals.php:13
+msgid "Mail"
+msgstr "Mail"
+
+#: template-legals.php:25
+msgid "Téléphone"
+msgstr "Téléphone"
+
+#: template-legals.php:34
+msgid "Adresse"
+msgstr "Adresse"
+
+#: template-legals.php:49
+msgid "Clause de confidentialité"
+msgstr "Clause de confidentialité"

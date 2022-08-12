@@ -6,7 +6,7 @@
            class="hero__link btn"><?= __('Découvrir Antilope', 'ant') ?></a>
     </div>
     <div class="scroll-down">
-        <p class="scrolldown--text"><strong>Faites défiler la page</strong> <br> pour en savoir plus</p>
+        <p class="scrolldown--text"><strong><?= __('Faites défiler la page', 'ant') ?></strong> <br> <?= __('pour en savoir plus', 'ant') ?></p>
         <svg version="1.1" class="scrolldown-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 16 30.1" xml:space="preserve">
             <path class="desktop" d="M8,22.7c-2.1,0-4.2-0.9-5.7-2.5c-1.5-1.6-2.3-3.8-2.3-6V8.5c0-3,1.5-5.9,4-7.4c2.5-1.5,5.5-1.5,8,0
@@ -33,7 +33,7 @@
         <h2 class="presentation__title hidden" id="presentation"><?= __('Présentation', 'ant') ?></h2>
         <div class="presentation__content">
             <p class="presentation__meta">
-              L’air joue un rôle primordial pour la vie telle que nous la connaissons sur terre. Une mauvaise qualité de l’air a une incidence négative sur la santé humaine et sur l’environnement au sens large. Ses conséquences sont non seulement de nature sanitaire, écologique et économique mais aussi du point de vue humain: disposer d’un air de qualité et sain doit être un droit fondamental.
+                <?= __('L’air joue un rôle primordial pour la vie telle que nous la connaissons sur terre. Une mauvaise qualité de l’air a une incidence négative sur la santé humaine et sur l’environnement au sens large. Ses conséquences sont non seulement de nature sanitaire, écologique et économique mais aussi du point de vue humain: disposer d’un air de qualité et sain doit être un droit fondamental.', 'ant'); ?>
             </p>
             <a href="<?= get_the_permalink(ant_get_template_page('template-about')); ?>" class="presentation__link btn"><?= __('En savoir plus', 'ant') ?></a>
         </div>
@@ -69,7 +69,7 @@
             <h2 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h2>
             <div class="contact-card__card">
                 <div class="contact-card__content">
-                    <p class="contact-card__meta">Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
+                    <p class="contact-card__meta"><?= __('Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.', 'ant'); ?></p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
                        class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>

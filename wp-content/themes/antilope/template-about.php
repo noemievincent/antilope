@@ -26,7 +26,7 @@
             <h3 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h3>
             <div class="contact-card__card">
                 <div class="contact-card__content">
-                    <p class="contact-card__meta">Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.</p>
+                    <p class="contact-card__meta"><?= __('Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.', 'ant'); ?></p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
                        class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>

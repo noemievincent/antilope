@@ -14,13 +14,11 @@ $date = DateTime::createFromFormat('Y-m-d', $date_string);
                 <?php if (get_field('date')):?>
                     <time class="article__date" datetime="<?=get_field('date')?>"><?php echo $date->format('d F Y'); ?></time>
                 <?php else: ?>
-                    <p class="article__date">Pas de date</p>
+                    <p class="article__date"><?= __('Pas de date', 'ant'); ?></p>
                 <?php endif; ?>
                 <p class="article__excerpt"><?= get_the_content() ?></p>
             </div>
         </div>
         <a href="<?= get_field('link') ?>" class="article__link article__cta btn"><?= __('Lire l‘article', 'ant'); ?></a>
-<!--        <div class="article__cta btn">-->
-<!--        </div>-->
     </div>
 </article>
