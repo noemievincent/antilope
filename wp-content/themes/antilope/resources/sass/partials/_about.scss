@@ -1,0 +1,16 @@
+@import "partner";
+
+.project__container {
+  display: flex;
+  gap: em(60, 16);
+}
+
+.project__content {
+  line-height: em(20, 16);
+}
+
+.project__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: em(20, 16);
+}

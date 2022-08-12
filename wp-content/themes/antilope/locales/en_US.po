@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Antilope\n"
-"POT-Creation-Date: 2022-08-12 10:44+0200\n"
-"PO-Revision-Date: 2022-08-12 10:45+0200\n"
+"POT-Creation-Date: 2022-08-12 13:30+0200\n"
+"PO-Revision-Date: 2022-08-12 13:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: en_US\n"
@@ -118,12 +118,11 @@ msgstr "See project"
 msgid "Voir tous les modules"
 msgstr "See all modules"
 
-#: index.php:69 index.php:74 single-module.php:49 template-about.php:26
-#: template-about.php:31
+#: index.php:69 index.php:74 single-module.php:49 template-about.php:35
 msgid "Contactez-nous"
 msgstr "Contact us"
 
-#: index.php:72 template-about.php:29
+#: index.php:72 template-about.php:33
 msgid ""
 "Pour toutes questions ou demandes au sujet du projet ou d’un module, "
 "n’hésitez pas nous contacter."
@@ -131,7 +130,7 @@ msgstr ""
 "If you have any questions or requests about the project or a module, do not "
 "hesitate to contact us."
 
-#: index.php:88 template-about.php:45
+#: index.php:88 template-about.php:49
 msgid "Vers le site de l‘:name"
 msgstr "Go to :name‘s website"
 
@@ -175,9 +174,13 @@ msgstr "The project"
 msgid "Les partenaires"
 msgstr "The partners"
 
-#: template-about.php:17 template-contact.php:83
-msgid "Visiter le site de l‘:name"
-msgstr "Go to :name‘s website"
+#: template-about.php:20
+msgid "Se rendre sur le site"
+msgstr "Go to the website"
+
+#: template-about.php:30
+msgid "Des questions ?"
+msgstr "Questions ?"
 
 #: template-contact.php:8
 msgid "Formulaire de contact"
@@ -247,26 +250,26 @@ msgstr "Submit"
 msgid "Merci ! Votre message a bien été envoyé."
 msgstr "Thank you ! Your message has been sent."
 
-#: template-contact.php:72
+#: template-contact.php:71 template-legals.php:13
 msgid "Coordonnées"
 msgstr "Contact details"
 
+#: template-contact.php:82 template-legals.php:24
+msgid "Visiter le site de l‘:name"
+msgstr "Go to :name‘s website"
+
 #: template-legals.php:9
-msgid "Informations légales"
-msgstr "Legal information"
-
-#: template-legals.php:13
-msgid "Mail"
-msgstr "Mail"
-
-#: template-legals.php:25
-msgid "Téléphone"
-msgstr "Phone number"
-
-#: template-legals.php:34
-msgid "Adresse"
-msgstr "Address"
-
-#: template-legals.php:49
 msgid "Clause de confidentialité"
 msgstr "Confidentiality clause"
+
+#~ msgid "Informations légales"
+#~ msgstr "Legal information"
+
+#~ msgid "Mail"
+#~ msgstr "Mail"
+
+#~ msgid "Téléphone"
+#~ msgstr "Phone number"
+
+#~ msgid "Adresse"
+#~ msgstr "Address"

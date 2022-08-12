@@ -27,6 +27,9 @@ function ant_boot_theme() {
 	}
 }
 
+// Désactiver le formatage automatique des paragraphes
+remove_filter ('the_content', 'wpautop');
+
 // Désactiver l'éditeur "Gutenberg" de Wordpress
 add_filter('use_block_editor_for_post', '__return_false');
 
