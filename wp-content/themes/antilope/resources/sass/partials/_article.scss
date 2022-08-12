@@ -7,6 +7,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: em(40, 16) em(12, 16);
   justify-items: center;
+  margin-top: em(40, 16);
 }
 
 .articles__cards {

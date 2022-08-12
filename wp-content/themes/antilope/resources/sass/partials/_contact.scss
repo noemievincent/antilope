@@ -23,7 +23,7 @@
 }
 
 .contact-card__link {
-  max-width: em(300, 20);
+  align-self: start;
 }
 
 .contact-card__coords, .coord__content, .contact__coords {
@@ -74,6 +74,7 @@
 .has_2_columns {
   display: grid;
   grid-template-columns: em(500, 16) em(100, 16) 1fr;
+  margin-top: em(40, 16);
 }
 
 .sub-pages .contact__separator {

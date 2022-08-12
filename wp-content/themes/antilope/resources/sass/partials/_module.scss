@@ -47,8 +47,8 @@
   font-size: em(13, 16);
   z-index: 5;
   grid-column: 2/6;
-  padding: em(14, 13) em(40, 13);
   margin-top: em(-26, 13);
+  padding: em(14, 13) em(40, 13);
   letter-spacing: unset;
   color: #FFFFFF;
   //max-width: 230px;
@@ -59,6 +59,7 @@
   flex-direction: column;
   align-items: center;
   gap: em(80, 16);
+  margin-top: em(40, 16);
 }
 
 .sub-pages  .module__card {
@@ -91,7 +92,7 @@
 
 .sub-pages .module__link {
   font-size: em(18, 20);
-  width: em(260, 18);
+  align-self: start;
 }
 
 .sub-pages .module__img {

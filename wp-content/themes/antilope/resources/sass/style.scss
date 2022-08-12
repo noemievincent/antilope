@@ -14,6 +14,7 @@ $browser-context: 16; // Default
 @import "partials/home";
 @import "partials/article";
 @import "partials/module";
+@import "partials/single-module";
 @import "partials/contact";
 
 html {
@@ -70,10 +71,6 @@ hr {
 
 .sub-pages main {
   margin: em(100, 16) em(60, 16) em(100, 16);
-}
-
-.sub-pages h2 {
-  margin-bottom: em(40, 50);
 }
 
 .hidden {

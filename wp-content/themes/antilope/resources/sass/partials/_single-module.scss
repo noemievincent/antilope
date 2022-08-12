@@ -1,0 +1,112 @@
+.singleModule__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: em(80, 16);
+}
+
+.singleModule__presentation{
+  display: flex;
+  gap: em(120, 16);
+}
+
+.pres__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pres__content {
+  line-height: 25px;
+}
+
+.pres__contact {
+  align-self: start;
+}
+
+.singleModule__about {
+  display: flex;
+  flex-direction: column;
+  gap: em(50, 16);
+}
+
+.singleModule__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: em(20, 16);
+}
+
+.singleModule__card {
+  background-color: #FFFFFF;
+  border-radius: em(20, 16);
+  box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
+  padding: em(30, 16);
+}
+
+.singleModule ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: em(10, 16);
+}
+
+.singleModule ul ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: em(15, 16);
+}
+
+.singleModule li {
+  margin-top: em(10, 16);
+}
+
+.pollutants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pollutants__link {
+  font-size: em(16, 16);
+  z-index: 5;
+  align-self: center;
+}
+
+.singleModule__gallery {
+  display: flex;
+  justify-content: center;
+  gap: em(30, 16);
+}
+
+.singleModule__contact {
+  align-self: center;
+}
+
+.singleModule__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: em(60, 16);
+}
+
+.prev {
+  background: url("../../img/arrow-prev.svg") no-repeat left;
+  background-size: contain;
+  padding-left: em(30, 16);
+  transition: padding-left ease-in-out 0.2s;
+}
+
+.prev:hover {
+  background-image: url("../../img/arrow-prev-hover.svg");
+  padding-left: em(40, 16);
+}
+
+.next {
+  background: url("../../img/arrow-next.svg") no-repeat right;
+  background-size: contain;
+  padding-right: em(30, 16);
+  transition: padding-right ease-in-out 0.2s;
+}
+
+.next:hover {
+  background-image: url("../../img/arrow-next-hover.svg");
+  padding-right: em(40, 16);
+}

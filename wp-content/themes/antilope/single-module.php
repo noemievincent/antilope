@@ -20,15 +20,19 @@
         </div>
         <hr>
         <div class="singleModule__about">
-            <div class="singleModule__features features">
-                <h4 class="features__title"><?= __('Caractéristiques', 'ant') ?></h4>
-                <p><?= get_field('features'); ?></p>
-            </div>
-            <div class="singleModule__pollutants pollutants">
-                <h4 class="pollutants__title"><?= __('Polluants mesurés', 'ant') ?></h4>
-                <p><?= get_field('mesured_pollutants'); ?></p>
-                <a href="https://www.wallonair.be/fr/"
-                   class="pollutants__link btn"><?= __('Voir les résultats en direct', 'ant') ?></a>
+            <div class="singleModule__cards">
+                <div class="singleModule__card singleModule__features features">
+                    <h3 class="features__title"><?= __('Caractéristiques', 'ant') ?></h3>
+                    <?= get_field('features'); ?>
+                </div>
+                <div class="singleModule__card singleModule__pollutants pollutants">
+                    <div class="pollutants__content">
+                        <h3 class="pollutants__title"><?= __('Polluants mesurés', 'ant') ?></h3>
+                        <?= get_field('mesured_pollutants'); ?>
+                    </div>
+                    <a href="https://www.wallonair.be/fr/"
+                       class="pollutants__link btn" target="_blank"><?= __('Voir les résultats en direct', 'ant') ?></a>
+                </div>
             </div>
             <div class="singleModule__gallery">
                 <figure class="singleModule__figure">
