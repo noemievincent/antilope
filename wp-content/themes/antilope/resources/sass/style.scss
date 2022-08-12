@@ -16,6 +16,8 @@ $browser-context: 16; // Default
 @import "partials/module";
 @import "partials/single-module";
 @import "partials/contact";
+@import "partials/legal";
+@import "partials/404";
 
 html {
   scroll-behavior: smooth;
@@ -71,6 +73,13 @@ hr {
 
 .sub-pages main {
   margin: em(100, 16) em(60, 16) em(100, 16);
+}
+
+.has_2_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: em(100, 16);
+  margin-top: em(40, 16);
 }
 
 .hidden {

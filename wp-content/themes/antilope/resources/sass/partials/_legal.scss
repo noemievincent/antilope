@@ -1,0 +1,14 @@
+.legals__coords { //10
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+.legals__terms {
+  line-height: em(30, 16);
+  margin-top: em(30, 16);
+}
+
+.legals .coord__content {
+  gap: em(13, 16);
+}

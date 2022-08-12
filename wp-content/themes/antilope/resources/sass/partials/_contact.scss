@@ -71,12 +71,6 @@
   gap: em(12, 16);
 }
 
-.has_2_columns {
-  display: grid;
-  grid-template-columns: em(500, 16) em(100, 16) 1fr;
-  margin-top: em(40, 16);
-}
-
 .sub-pages .contact__separator {
   justify-self: center;
 }

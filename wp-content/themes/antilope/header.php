@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="author" content="Noémie Vincent">
     <meta name="keywords" content="Mesure, Pollution, Qualité de l'air, Système embarqué, Capteurs">
-    <meta name="description" content="Antilope, ou “Assessment of Indoor Outdoor Pollutants Exposure“, est un système low-cost de mesure des polluants atmosphériques tels que les oxydes d’azote (NO & NO2), ozone (O3) et les particules fines (PM 2.5).">
+    <meta name="description" content="<?= get_bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
     <meta property="og:title" content="Antilope">
-    <meta property="og:description" content="Antilope, ou “Assessment of Indoor Outdoor Pollutants Exposure“, est un système low-cost de mesure des polluants atmosphériques tels que les oxydes d’azote (NO & NO2), ozone (O3) et les particules fines (PM 2.5).">
+    <meta property="og:description" content="<?= get_bloginfo('description'); ?>">
     <meta property="og:image" content="/wp-content/themes/antilope/screenshot.jpg">
     <meta property="og:site_name" content="Antilope">
     <title><?= wp_title('·', false, 'right') . 'Antilope'; ?></title>

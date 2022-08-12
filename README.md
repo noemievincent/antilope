@@ -1,6 +1,6 @@
 # Projet ANTILOPE
 
-> lien vers le [prototype](https://www.figma.com/file/OTvoSPafjqMoZbjj0xrN3s/Antilope?node-id=0%3A1) et le [design](https://www.figma.com/file/OTvoSPafjqMoZbjj0xrN3s/Antilope?node-id=42%3A2) (figma)
+> lien vers le [site](https://antilope.noemie-vincent.be/) et le [design](https://www.figma.com/file/OTvoSPafjqMoZbjj0xrN3s/Antilope?node-id=42%3A2) (figma)
 
 ### PUBLIC CIBLE
 

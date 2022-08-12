@@ -67,7 +67,6 @@
                        class="form__success"><?= __('Merci ! Votre message a bien été envoyé.', 'ant') ?></p>
                     <?php unset($_SESSION['contact_form_feedback']);endif; ?>
             </section>
-            <div class="contact__separator"></div>
             <section class="contact__coords coords" aria-labelledby="coords">
                 <h3 class="coords__title hidden" id="coords"><?= __('Coordonnées', 'ant'); ?></h3>
                 <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
