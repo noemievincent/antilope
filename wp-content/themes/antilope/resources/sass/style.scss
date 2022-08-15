@@ -19,18 +19,24 @@ $browser-context: 16; // Default
 @import "partials/contact";
 @import "partials/legal";
 @import "partials/404";
+@import "media-queries";
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr;
   color: #172F0E;
   background-color: #FCF9F3;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
+}
+
+body {
+  //overflow-x: hidden;
+  //display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
 }
 
 * {

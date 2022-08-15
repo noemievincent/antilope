@@ -45,4 +45,9 @@ footer {
 
 .footer__img {
   max-height: em(98, 16);
+  transition: transform ease-in-out 0.2s;
+}
+
+.footer__img:hover {
+  transform: scale(1.1);
 }

@@ -2,8 +2,7 @@
 <section class="hero" aria-labelledby="hero">
     <div class="hero__container">
         <h2 class="hero__title" id="hero"><?= __('Vers un système bon marché de mesure des polluants atmosphériques', 'ant') ?></h2>
-        <a href="#presentation"
-           class="hero__link btn"><?= __('Découvrir Antilope', 'ant') ?></a>
+        <a href="#presentation" class="hero__link btn"><?= __('Découvrir Antilope', 'ant') ?></a>
     </div>
     <div class="scroll-down">
         <p class="scrolldown--text"><strong><?= __('Faites défiler la page', 'ant') ?></strong> <br> <?= __('pour en savoir plus', 'ant') ?></p>

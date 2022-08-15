@@ -27,7 +27,7 @@
                                 <h4 class="card__title"><?= get_the_title(); ?></h4>
                                 <p class="card__meta"><?= get_the_content(); ?></p>
                             </div>
-                            <a href="<?=get_field('website') ?>" class="card__link btn"><?= __('Se rendre sur le site', 'ant'); ?></a>
+                            <a href="<?=get_field('website') ?>" class="card__link btn" target="_blank"><?= __('Se rendre sur le site', 'ant'); ?></a>
                         </div>
                         <figure class="card__fig">
                             <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="card__img">
@@ -56,7 +56,7 @@
                                 <p class="address__meta" itemprop="postalCode"><?= $address['city'] ?></p>
                             </div>
                             <p class="coord__mail"><?=get_field('mail') ?></p>
-                            <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Vers le site de l‘:name', 'ant')); ?></a>
+                            <a href="<?=get_field('website') ?>" class="coord__link" target="_blank"><?= str_replace(':name', get_the_title(), __('Vers le site de l‘:name', 'ant')); ?></a>
                         </div>
 				    <?php endwhile; endif; ?>
                 </div>

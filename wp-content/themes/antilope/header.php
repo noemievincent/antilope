@@ -19,6 +19,7 @@
 <body class="<?= is_home() ? 'home' : 'sub-pages'?>">
 <header id="header">
     <h1 class="header__title hidden">Antilope</h1>
+    <input id="toggle" class="toggle" type="checkbox">
     <div class="header__bar">
         <a class="header__link" href="<?= home_url() ?>">
             <svg version="1.1" class="header__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -51,7 +52,6 @@
                 c-0.9,1-2.3,1-3.3,0.2c-1-0.9-1-2.3-0.2-3.3c0.9-1,2.3-1,3.3-0.2C27.3,25.3,27.4,26.8,26.5,27.7z"/>
             </svg>
         </a>
-        <input id="toggle" class="toggle" type="checkbox">
         <div class="burgermenu">
             <label for="toggle" class="hamburger">
                 <span class="top-bun"></span>
