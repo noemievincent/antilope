@@ -6,15 +6,15 @@
   border-radius: em(20, 16);
   padding: em(40, 16) em(100, 16) em(40, 16) em(60, 16);
   min-height: em(350, 16);
-  display: grid;
-  grid-template-columns: em(650, 16) 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-card__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: em(480, 16);
+  //max-width: em(480, 16);
   grid-column: 1;
 }
 
@@ -35,12 +35,6 @@
 .contact-card__coords {
   justify-content: space-between;
   grid-column: 4;
-}
-
-.contact-card__separator {
-  height: 100%;
-  width: 2px;
-  background-color: #D9E0CA;
 }
 
 .contact-card .coord__content {

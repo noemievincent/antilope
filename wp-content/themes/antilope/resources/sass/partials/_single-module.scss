@@ -31,8 +31,7 @@
 }
 
 .singleModule__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: em(20, 16);
 }
 
@@ -41,6 +40,7 @@
   border-radius: em(20, 16);
   box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
   padding: em(30, 16);
+  flex: 1;
 }
 
 .singleModule ul {
@@ -73,6 +73,7 @@
 
 .singleModule__gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: em(30, 16);
 }

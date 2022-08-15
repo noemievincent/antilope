@@ -21,8 +21,10 @@ $browser-context: 16; // Default
 @import "partials/404";
 @import "media-queries";
 
+
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -30,13 +32,7 @@ body {
   background-color: #FCF9F3;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-}
-
-body {
-  //overflow-x: hidden;
-  //display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr;
+  height: 100%;
 }
 
 * {
@@ -53,10 +49,13 @@ a {
 }
 
 h2, h3, h4 {
-  font-size: em(50, 16);
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: em(50, 16);
 }
 
 h3 {
@@ -78,8 +77,13 @@ hr {
   margin: em(220, 16) em(60, 16) em(100, 16);
 }
 
+.sub-pages {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 .sub-pages main {
-  margin: em(100, 16) em(60, 16) em(100, 16);
+  padding: em(100, 16) em(60, 16);
 }
 
 .has_2_columns {

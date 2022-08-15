@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Antilope\n"
-"POT-Creation-Date: 2022-08-12 13:30+0200\n"
-"PO-Revision-Date: 2022-08-12 13:30+0200\n"
+"POT-Creation-Date: 2022-08-15 13:30+0200\n"
+"PO-Revision-Date: 2022-08-15 13:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: en_US\n"
@@ -39,7 +39,7 @@ msgstr "Please provide a valid email address."
 msgid "Ce champ ne peut pas être vide."
 msgstr "This field cannot be empty."
 
-#: archive-article.php:4 index.php:95
+#: archive-article.php:4 index.php:93
 msgid "Publications"
 msgstr "Articles"
 
@@ -51,7 +51,7 @@ msgstr "There is nothing here to show you…"
 msgid "Nos modules"
 msgstr "Our modules"
 
-#: archive-module.php:10 index.php:58
+#: archive-module.php:10 index.php:57
 msgid "Il n’y a pas de modules à vous présenter..."
 msgstr "There is nothing here to show you…"
 
@@ -67,23 +67,23 @@ msgstr "Main navigation"
 msgid "Vers un système bon marché de mesure des polluants atmosphériques"
 msgstr "Towards a low-cost system for measuring air pollutants"
 
-#: index.php:6
+#: index.php:5
 msgid "Découvrir Antilope"
 msgstr "Discover Antilope"
 
-#: index.php:9
+#: index.php:8
 msgid "Faites défiler la page"
 msgstr "Scroll down"
 
-#: index.php:9
+#: index.php:8
 msgid "pour en savoir plus"
 msgstr "to learn more"
 
-#: index.php:33
+#: index.php:32
 msgid "Présentation"
 msgstr "Presentation"
 
-#: index.php:36
+#: index.php:35
 msgid ""
 "L’air joue un rôle primordial pour la vie telle que nous la connaissons sur "
 "terre. Une mauvaise qualité de l’air a une incidence négative sur la santé "
@@ -98,31 +98,31 @@ msgstr ""
 "but also from a human point of view: having good and healthy air should be a "
 "fundamental right."
 
-#: index.php:38
+#: index.php:37
 msgid "En savoir plus"
 msgstr "Learn more"
 
-#: index.php:44
+#: index.php:43
 msgid "Modules"
 msgstr "Modules"
 
-#: index.php:52 partials/module.php:10
+#: index.php:51 partials/module.php:10
 msgid "Voir le module :title"
 msgstr "See :title project"
 
-#: index.php:54 partials/module.php:7
+#: index.php:53 partials/module.php:7
 msgid "Voir le module"
 msgstr "See project"
 
-#: index.php:62 index.php:105
+#: index.php:61
 msgid "Voir tous les modules"
 msgstr "See all modules"
 
-#: index.php:69 index.php:74 single-module.php:49 template-about.php:35
+#: index.php:68 index.php:73 single-module.php:49 template-about.php:45
 msgid "Contactez-nous"
 msgstr "Contact us"
 
-#: index.php:72 template-about.php:33
+#: index.php:71 template-about.php:43
 msgid ""
 "Pour toutes questions ou demandes au sujet du projet ou d’un module, "
 "n’hésitez pas nous contacter."
@@ -130,13 +130,17 @@ msgstr ""
 "If you have any questions or requests about the project or a module, do not "
 "hesitate to contact us."
 
-#: index.php:88 template-about.php:49
+#: index.php:86 template-about.php:58
 msgid "Vers le site de l‘:name"
 msgstr "Go to :name‘s website"
 
-#: index.php:101
+#: index.php:99
 msgid "Il n’y a pas d‘articles à vous présenter..."
 msgstr "There is nothing here to show you…"
+
+#: index.php:103
+msgid "Voir toutes les publications"
+msgstr "See all articles"
 
 #: partials/article.php:17
 msgid "Pas de date"
@@ -170,15 +174,15 @@ msgstr "See the results live"
 msgid "Le projet"
 msgstr "The project"
 
-#: template-about.php:11
+#: template-about.php:21
 msgid "Les partenaires"
 msgstr "The partners"
 
-#: template-about.php:20
+#: template-about.php:30
 msgid "Se rendre sur le site"
 msgstr "Go to the website"
 
-#: template-about.php:30
+#: template-about.php:40
 msgid "Des questions ?"
 msgstr "Questions ?"
 

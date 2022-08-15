@@ -72,7 +72,6 @@
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
                        class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>
-                <div class="contact-card__separator"></div>
                 <div class="contact-card__coords coord">
                     <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
                         <?php $address = get_field('address');?>
@@ -100,8 +99,8 @@
                     <p class="articles__empty"><?= __('Il n’y a pas d‘articles à vous présenter...', 'ant'); ?></p>
                 <?php endif; ?>
             </div>
-            <a href="<?= get_post_type_archive_link('module'); ?>"
-               class="articles__link secondary--btn arrow"> <?= __('Voir tous les modules', 'ant') ?></a>
+            <a href="<?= get_post_type_archive_link('article'); ?>"
+               class="articles__link secondary--btn arrow"> <?= __('Voir toutes les publications', 'ant') ?></a>
         </section>
     </div>
 </main>

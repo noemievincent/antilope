@@ -65,16 +65,21 @@ header a {
 
 .scrollup {
   display: none;
-  width: em(35, 16);
-  height: em(35, 16);
+  width: em(60, 16);
+  height: em(60, 16);
   padding: em(16, 16);
   border-radius: em(50, 16);
   background-color: #8AAB7C;
-  opacity: 0.7;
+  opacity: 0.8;
   position: fixed;
   bottom: em(30, 16);
   right: em(30, 16);
+  z-index: 10;
   transition: opacity ease-in-out 0.2s;
+}
+
+.scrollup--show {
+  display: block;
 }
 
 .scrollup:hover, .scrollup:focus {

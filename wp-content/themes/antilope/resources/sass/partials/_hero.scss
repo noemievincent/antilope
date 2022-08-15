@@ -49,6 +49,8 @@
 
 .scrolldown-mobile {
   display: none;
+  width: em(30, 15);
+  height: em(30, 15);
   animation: bounce 2s infinite;
 }
 

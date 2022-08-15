@@ -44,7 +44,6 @@
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
                        class="contact-card__link btn"><?= __('Contactez-nous', 'ant') ?></a>
                 </div>
-                <div class="contact-card__separator"></div>
                 <div class="contact-card__coords coord">
 				    <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
 					    <?php $address = get_field('address');?>
