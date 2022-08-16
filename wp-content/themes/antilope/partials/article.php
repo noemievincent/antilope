@@ -19,6 +19,6 @@ $date = DateTime::createFromFormat('Y-m-d', $date_string);
                 <p class="article__excerpt"><?= get_the_content() ?></p>
             </div>
         </div>
-        <a href="<?= get_field('link') ?>" class="article__link article__cta btn"><?= __('Lire l‘article', 'ant'); ?></a>
+        <a href="<?= get_field('link') ?>" class="article__link article__cta btn" target="_blank"><?= __('Lire l‘article', 'ant'); ?></a>
     </div>
 </article>

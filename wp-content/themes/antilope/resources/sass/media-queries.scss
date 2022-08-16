@@ -1,29 +1,17 @@
 @import "partials/burgermenu";
 
-html {
-  //overflow-x: hidden;
-}
-
-body:before {
-  content: "default size";
-  background-color: #D7B6FF;
-  width: 100%;
-  height: 15px;
-  font-size: 11px;
-  z-index: 20;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 1480px) {
-  body:before {
-    content: "min-width: 1480px";
-    background-color: lightblue;
+
+  form {
+    max-width: em(900, 16);
+  }
+
+  footer {
+    font-size: em(18, 16);
+  }
+
+  .pres__content, .singleModule li, .singleModule__nav, .module__excerpt, .scroll-down, .header__menu {
+    font-size: em(20, 16);
   }
 
   .hero {
@@ -42,28 +30,16 @@ body:before {
     font-size: em(25, 16);
   }
 
-  .scroll-down {
-    font-size: em(20, 16);
-  }
-
-  .header__menu {
-    font-size: em(20, 16);
-  }
-
   .articles__container {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  footer {
-    font-size: em(18, 16);
+  .error404 {
+    margin-top: em(200, 16);
   }
 }
 
 @media (max-width: 1200px) {
-  body:before {
-    content: "max-width: 1200px";
-    background-color: lightpink;
-  }
 
   .hero {
     padding-top: em(180, 16);
@@ -73,7 +49,19 @@ body:before {
     padding-right: em(120, 14);
   }
 
-  .presentation__img {
+  .pres__left {
+    gap: em(30, 16);
+  }
+
+  .pres__contact, .singleModule__contact {
+    font-size: em(18, 16);
+  }
+
+  .pres__fig {
+    align-self: center;
+  }
+
+  .presentation__img, .contact-card__coords {
     display: none;
   }
 
@@ -116,10 +104,6 @@ body:before {
     font-size: em(18, 16);
   }
 
-  .contact-card__coords {
-    display: none;
-  }
-
   div.has_2_columns {
     gap: em(40, 16);
   }
@@ -133,27 +117,11 @@ body:before {
     gap: em(40, 16);
   }
 
-  .pres__left {
-    gap: em(30, 16);
-  }
-
-  .pres__contact, .singleModule__contact {
-    font-size: em(18, 16);
-  }
-
-  .pres__fig {
-    align-self: center;
-  }
-
   .singleModule__about h3 {
     font-size: em(22, 16);
   }
 
-  .singleModule__about li {
-    font-size: em(14, 16);
-  }
-
-  .pollutants__link {
+  .singleModule__about li, .pollutants__link {
     font-size: em(14, 16);
   }
 
@@ -172,10 +140,6 @@ body:before {
 }
 
 @media (max-width: 880px) {
-  body:before {
-    content: "max-width: 880px";
-    background-color: lightcoral;
-  }
 
   header {
     background-color: transparent;
@@ -194,10 +158,6 @@ body:before {
     right: 0;
     z-index: 15;
     transition: background-color ease-in-out 0.2s;
-  }
-
-  .scrollup {
-    display: block;
   }
 
   div.burgermenu {
@@ -228,6 +188,10 @@ body:before {
 
   .hero__container {
     gap: em(50, 16);
+  }
+
+  .scrollup {
+    display: block;
   }
 
   .scroll-down {
@@ -285,10 +249,6 @@ body:before {
 }
 
 @media (max-width: 798px) {
-  body:before {
-    content: "max-width: 798px";
-    background-color: lightgreen;
-  }
 
   body h2 {
     font-size: em(30, 16);
@@ -373,10 +333,6 @@ body:before {
 }
 
 @media (max-width: 524px) {
-  body:before {
-    content: "max-width: 524px";
-    background-color: lightseagreen;
-  }
 
   .singleModule__header {
     flex-direction: column;
