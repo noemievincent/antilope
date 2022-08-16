@@ -3,7 +3,7 @@ $date_string = get_field('date');
 $date = DateTime::createFromFormat('Y-m-d', $date_string);
 ?>
 
-<article class="article" aria-labelledby="<?= get_post_field('post_name'); ?>">
+<article class="article fade-in" aria-labelledby="<?= get_post_field('post_name'); ?>">
     <div class="article__card">
         <div class="article__container">
             <div class="article__header">

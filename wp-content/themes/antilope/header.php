@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html <?php language_attributes(); ?> class="js-disabled" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Noémie Vincent">
@@ -17,7 +17,7 @@
 	<?php wp_head(); ?>
 </head>
 <body class="<?= is_home() ? 'home' : 'sub-pages'?>">
-<header id="header">
+<header>
     <h1 class="header__title hidden">Antilope</h1>
     <input id="toggle" class="toggle" type="checkbox">
     <div class="header__bar">
@@ -80,7 +80,7 @@
         </div>
     </div>
 </header>
-<a href="#" class="header__scrollup">
+<a href="#top" class="header__scrollup">
     <svg version="1.1" class="scrollup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 19.8 22.9" xml:space="preserve">
         <path class="up" d="M1,10.2L9.9,1l8.9,9.1 M9.9,21.9V1V21.9z"/>

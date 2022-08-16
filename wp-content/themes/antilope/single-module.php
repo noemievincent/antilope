@@ -2,12 +2,12 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main class="singleModule">
         <section aria-labelledby="singleModule">
-            <div class="singleModule__header">
+            <div class="singleModule__header fade-in">
                 <h2 class="singleModule__title" id="singleModule" aria-level="2"><?= get_the_title(); ?></h2>
                 <a href="<?= get_post_type_archive_link('module') ?>"
                    class="singleModule__return secondary--btn arrow"><?= __('Retour aux modules', 'ant') ?></a>
             </div>
-            <div class="singleModule__presentation pres">
+            <div class="singleModule__presentation pres fade-in">
                 <div class="pres__left">
                     <p class="pres__content">
                         <?= get_the_content(); ?>
@@ -20,7 +20,7 @@
                 </figure>
             </div>
             <hr>
-            <div class="singleModule__about">
+            <div class="singleModule__about fade-in">
                 <div class="singleModule__cards">
                     <div class="singleModule__card singleModule__features features">
                         <h3 class="features__title"><?= __('Caractéristiques', 'ant') ?></h3>
@@ -49,7 +49,7 @@
                 <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"
                    class="singleModule__contact btn"><?= __('Contactez-nous', 'ant') ?></a>
             </div>
-            <div class="singleModule__nav">
+            <div class="singleModule__nav fade-in">
                 <?php ant_previous_post_link('module'); ?>
                 <?php ant_next__post_link('module'); ?>
             </div>

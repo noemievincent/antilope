@@ -1,4 +1,4 @@
-<article class="module__card" aria-labelledby="<?= get_post_field('post_name'); ?>">
+<article class="module__card fade-in" aria-labelledby="<?= get_post_field('post_name'); ?>">
     <div class="module__container">
         <div class="module__content">
             <h3 class="module__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>

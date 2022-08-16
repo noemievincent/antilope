@@ -39,7 +39,7 @@
         <img src="<?= get_template_directory_uri() ?>/img/air.jpg" alt="" class="presentation__img">
     </section>
     <div class="home__content">
-        <section class="modules" aria-labelledby="modules">
+        <section class="modules fade-in" aria-labelledby="modules">
             <h2 class="modules__title" id="modules"><?= __('Modules', 'ant') ?></h2>
             <div class="modules__cards">
                 <?php
@@ -61,10 +61,10 @@
                class="modules__link secondary--btn arrow"> <?= __('Voir tous les modules', 'ant') ?></a>
         </section>
         <hr>
-        <div class="iframe__container">
+        <div class="iframe__container fade-in">
             <iframe allowfullscreen class="video" src="https://www.youtube.com/embed/hOlzReqeewQ"></iframe>
         </div>
-        <section class="contact-card" aria-labelledby="contact">
+        <section class="contact-card fade-in" aria-labelledby="contact">
             <h2 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h2>
             <div class="contact-card__card">
                 <div class="contact-card__content">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="articles" aria-labelledby="articles">
+        <section class="articles fade-in" aria-labelledby="articles">
             <h2 class="articles__title" id="articles"><?= __('Publications', 'ant') ?></h2>
             <div class="articles__cards">
                 <?php

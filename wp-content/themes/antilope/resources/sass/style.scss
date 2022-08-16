@@ -99,6 +99,17 @@ hr {
   border: 0;
 }
 
+.js-enabled .fade-in {
+  opacity: 0;
+  transform: translateY(2em) scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.js-enabled .fade-in.active{
+  opacity: 1;
+  transform: none;
+}
+
 body:before {
   content: "default size";
   background-color: #D7B6FF;

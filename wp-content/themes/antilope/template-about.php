@@ -17,7 +17,7 @@
                 </div>
             </div>
         </section>
-        <section class="partner" aria-labelledby="partner">
+        <section class="partner fade-in" aria-labelledby="partner">
             <h3 class="partner__title" id="partner"><?= __('Les partenaires', 'ant'); ?></h3>
             <div class="partner__cards">
                 <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
@@ -36,7 +36,7 @@
                 <?php endwhile; endif; ?>
             </div>
         </section>
-        <section class="contact-card" aria-labelledby="contact">
+        <section class="contact-card fade-in" aria-labelledby="contact">
             <h3 class="contact-card__title" id="contact"><?= __('Des questions ?', 'ant'); ?></h3>
             <div class="contact-card__card">
                 <div class="contact-card__content">
