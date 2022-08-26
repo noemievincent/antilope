@@ -22,11 +22,11 @@
             <hr>
             <div class="singleModule__about fade-in">
                 <div class="singleModule__cards">
-                    <div class="singleModule__card singleModule__features features">
+                    <div class="singleModule__card box-shadow singleModule__features features">
                         <h3 class="features__title"><?= __('Caractéristiques', 'ant') ?></h3>
                         <?= get_field('features'); ?>
                     </div>
-                    <div class="singleModule__card singleModule__pollutants pollutants">
+                    <div class="singleModule__card box-shadow singleModule__pollutants pollutants">
                         <div class="pollutants__content">
                             <h3 class="pollutants__title"><?= __('Polluants mesurés', 'ant') ?></h3>
                             <?= get_field('mesured_pollutants'); ?>

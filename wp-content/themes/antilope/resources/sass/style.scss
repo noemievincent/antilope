@@ -110,6 +110,15 @@ hr {
   transform: none;
 }
 
+.box-shadow {
+  box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
+  transition: box-shadow ease-in-out 0.2s;
+}
+
+.box-shadow--hover:hover {
+  box-shadow: 0 25px 55px rgba(23, 47, 14, 0.25);
+}
+
 body:before {
   content: "default size";
   background-color: #D7B6FF;

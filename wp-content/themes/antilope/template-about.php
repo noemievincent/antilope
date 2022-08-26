@@ -21,7 +21,7 @@
             <h3 class="partner__title" id="partner"><?= __('Les partenaires', 'ant'); ?></h3>
             <div class="partner__cards">
                 <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
-                    <div class="partner__card card">
+                    <div class="partner__card box-shadow card">
                         <div class="card__container">
                             <div class="card__content">
                                 <h4 class="card__title"><?= get_the_title(); ?></h4>
@@ -38,7 +38,7 @@
         </section>
         <section class="contact-card fade-in" aria-labelledby="contact">
             <h3 class="contact-card__title" id="contact"><?= __('Des questions ?', 'ant'); ?></h3>
-            <div class="contact-card__card">
+            <div class="contact-card__card box-shadow">
                 <div class="contact-card__content">
                     <p class="contact-card__meta"><?= __('Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.', 'ant'); ?></p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"

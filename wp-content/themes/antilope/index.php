@@ -28,7 +28,7 @@
     </div>
 </section>
 <main>
-    <section class="presentation" aria-labelledby="presentation">
+    <section class="presentation box-shadow" aria-labelledby="presentation">
         <h2 class="presentation__title hidden" id="presentation"><?= __('Présentation', 'ant') ?></h2>
         <div class="presentation__content">
             <p class="presentation__meta">
@@ -46,7 +46,7 @@
                 if(($modules = ant_get_modules(3))->have_posts()): while($modules->have_posts()): $modules->the_post()?>
                     <article class="module" aria-labelledby="<?= get_post_field('post_name'); ?>">
                         <div class="module__card">
-                            <div class="module__content">
+                            <div class="module__content box-shadow box-shadow--hover">
                                 <h3 class="module__title" id="<?= get_post_field('post_name'); ?>" aria-level="3"><?= get_the_title(); ?></h3>
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?= str_replace(':title', get_the_title(), __('Voir le module :title', 'ant')); ?>" class="module__svg style-svg">
                             </div>
@@ -66,7 +66,7 @@
         </div>
         <section class="contact-card fade-in" aria-labelledby="contact">
             <h2 class="contact-card__title hidden" id="contact"><?= __('Contactez-nous', 'ant'); ?></h2>
-            <div class="contact-card__card">
+            <div class="contact-card__card box-shadow">
                 <div class="contact-card__content">
                     <p class="contact-card__meta"><?= __('Pour toutes questions ou demandes au sujet du projet ou d’un module, n’hésitez pas nous contacter.', 'ant'); ?></p>
                     <a href="<?= get_the_permalink(ant_get_template_page('template-contact')); ?>"

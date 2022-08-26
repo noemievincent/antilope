@@ -1,7 +1,6 @@
 @import "partials/burgermenu";
 
 @media (min-width: 1480px) {
-
   form {
     max-width: em(900, 16);
   }
@@ -19,13 +18,17 @@
   }
 
   .scroll-down {
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
 
   .hero__container {
     max-width: em(1230, 16);
     margin-top: 6vh;
     font-size: 1.2vw;
+  }
+
+  .hero__link {
+    font-size: max(1em, 25px);
   }
 
   .articles__container {
@@ -38,6 +41,16 @@
 
   .sub-pages .article__link {
     font-size: 0.8vw;
+  }
+
+  .sub-pages .modules__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-pages .module__card {
+    height: 100%;
+    gap: em(20, 16);
   }
 }
 

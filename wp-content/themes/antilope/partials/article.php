@@ -5,7 +5,7 @@ $date = DateTime::createFromFormat('Y-m-d', $date_string);
 
 <article class="article fade-in" aria-labelledby="<?= get_post_field('post_name'); ?>">
     <div class="article__card">
-        <div class="article__container">
+        <div class="article__container box-shadow box-shadow--hover">
             <div class="article__header">
                 <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="article__img">
             </div>
