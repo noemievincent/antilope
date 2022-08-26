@@ -21,7 +21,7 @@
             <h3 class="partner__title" id="partner"><?= __('Les partenaires', 'ant'); ?></h3>
             <div class="partner__cards">
                 <?php if (($partners = ant_get_partners())->have_posts()):while ($partners->have_posts()): $partners->the_post(); ?>
-                    <div class="partner__card box-shadow card">
+                    <div class="partner__card box-shadow box-shadow--hover card">
                         <div class="card__container">
                             <div class="card__content">
                                 <h4 class="card__title"><?= get_the_title(); ?></h4>
