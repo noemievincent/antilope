@@ -28,16 +28,18 @@
     </div>
 </section>
 <main>
-    <section class="presentation box-shadow" aria-labelledby="presentation">
-        <h2 class="presentation__title hidden" id="presentation"><?= __('Présentation', 'ant') ?></h2>
-        <div class="presentation__content">
-            <p class="presentation__meta">
-                <?= __('L’air joue un rôle primordial pour la vie telle que nous la connaissons sur terre. Une mauvaise qualité de l’air a une incidence négative sur la santé humaine et sur l’environnement au sens large. Ses conséquences sont non seulement de nature sanitaire, écologique et économique mais aussi du point de vue humain: disposer d’un air de qualité et sain doit être un droit fondamental.', 'ant'); ?>
-            </p>
-            <a href="<?= get_the_permalink(ant_get_template_page('template-about')); ?>" class="presentation__link btn"><?= __('En savoir plus', 'ant') ?></a>
-        </div>
-        <img src="<?= get_template_directory_uri() ?>/img/air.jpg" alt="" class="presentation__img">
-    </section>
+    <div class="presentation__container">
+        <section class="presentation box-shadow" aria-labelledby="presentation">
+            <h2 class="presentation__title hidden" id="presentation"><?= __('Présentation', 'ant') ?></h2>
+            <div class="presentation__content">
+                <p class="presentation__meta">
+                    <?= __('L’air joue un rôle primordial pour la vie telle que nous la connaissons sur terre. Une mauvaise qualité de l’air a une incidence négative sur la santé humaine et sur l’environnement au sens large. Ses conséquences sont non seulement de nature sanitaire, écologique et économique mais aussi du point de vue humain: disposer d’un air de qualité et sain doit être un droit fondamental.', 'ant'); ?>
+                </p>
+                <a href="<?= get_the_permalink(ant_get_template_page('template-about')); ?>" class="presentation__link btn"><?= __('En savoir plus', 'ant') ?></a>
+            </div>
+            <img src="<?= get_template_directory_uri() ?>/img/air.jpg" alt="" class="presentation__img">
+        </section>
+    </div>
     <div class="home__content">
         <section class="modules fade-in" aria-labelledby="modules">
             <h2 class="modules__title" id="modules"><?= __('Modules', 'ant') ?></h2>

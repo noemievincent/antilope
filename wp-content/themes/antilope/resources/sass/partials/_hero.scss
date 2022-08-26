@@ -1,10 +1,9 @@
 .hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../img/hero.jpg") no-repeat;
   background-size: cover;
-  height: 150vh;
+  height: 130vh;
   color: #FFFFFF;
   padding: em(250, 16) em(60, 16);
-  //margin-bottom: em(200, 16);
 }
 
 .hero__title {
