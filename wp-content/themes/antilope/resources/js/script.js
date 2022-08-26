@@ -11,6 +11,7 @@ class ANT_Controller {
 
         this.fadeItems();
         this.appearScrollUp();
+        this.removeScrollDown();
     }
 
     fadeItems() {
@@ -20,13 +21,13 @@ class ANT_Controller {
             root: null,
             rootMargin: '0px',
             threshold: 0.3,
-        }
+        };
 
         let observer = new IntersectionObserver(callback, options);
         for (const item of items) {
             observer.observe(item);
             item.addEventListener('load', (event) => {
-            })
+            });
         }
         console.log(items);
 
@@ -42,15 +43,25 @@ class ANT_Controller {
     appearScrollUp() {
         const scrollUp = document.querySelector(".scrollup");
 
-        console.log(scrollUp)
-
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function () {
             console.log(window.scrollY);
-            if(window.scrollY > 300){
-                scrollUp.classList.add('active')
+            if (window.scrollY > 300) {
+                scrollUp.classList.add('active');
+            } else {
+                scrollUp.classList.remove('active');
             }
-            else {
-                scrollUp.classList.remove('active')
+        }, false);
+    }
+
+    removeScrollDown() {
+        const scrollDown = document.querySelector(".scroll-down");
+
+        window.addEventListener("scroll", function () {
+            console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                scrollDown.classList.add('hide');
+            } else {
+                scrollDown.classList.remove('hide');
             }
         }, false);
     }

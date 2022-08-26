@@ -19,8 +19,10 @@
 .hero__container {
   display: flex;
   flex-direction: column;
-  max-width: em(680, 16);
+  max-width: em(800, 16);
   gap: em(100, 16);
+  margin-top: 6vh;
+  font-size: 1.2vw;
 }
 
 .hero__link {
@@ -29,12 +31,17 @@
 
 .scroll-down {
   display: flex;
-  font-size: em(15, 16);
+  font-size: 1.2vw;
   text-align: right;
   gap: em(20, 15);
   position: absolute;
   bottom: em(30, 15);
   right: em(30, 15);
+  transition: opacity ease-in-out 0.3s;
+}
+
+.scroll-down.hide {
+  opacity: 0;
 }
 
 .scrolldown--text strong{

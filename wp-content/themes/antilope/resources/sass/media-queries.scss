@@ -10,7 +10,7 @@
     font-size: em(18, 16);
   }
 
-  .pres__content, .singleModule li, .singleModule__nav, .module__excerpt, .scroll-down, .header__menu {
+  .pres__content, .singleModule li, .singleModule__nav, .module__excerpt {
     font-size: em(20, 16);
   }
 
@@ -18,16 +18,14 @@
     padding: em(250, 16) em(140, 16);
   }
 
+  .scroll-down {
+    font-size: 1vw;
+  }
+
   .hero__container {
     max-width: em(1230, 16);
-  }
-
-  .hero__title {
-    font-size: em(50, 16);
-  }
-
-  .hero__link {
-    font-size: em(25, 16);
+    margin-top: 6vh;
+    font-size: 1.2vw;
   }
 
   .articles__container {
@@ -37,12 +35,25 @@
   .error404 {
     margin-top: em(200, 16);
   }
+
+  .sub-pages .article__link {
+    font-size: 0.8vw;
+  }
 }
 
 @media (max-width: 1200px) {
 
   .hero {
     padding-top: em(180, 16);
+  }
+
+  .hero__container {
+    margin-top: 12vh;
+    font-size: 1.4vw;
+  }
+
+  .scroll-down {
+    font-size: 1.4vw;
   }
 
   .presentation {
@@ -188,9 +199,11 @@
 
   .hero__container {
     gap: em(50, 16);
+    font-size: em(14, 16);
   }
 
   .scroll-down {
+    font-size: em(14, 16);
     flex-direction: column;
     align-items: center;
     text-align: center;

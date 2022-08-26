@@ -8,7 +8,7 @@
                 <h3 class="form__title hidden" id="form"><?= __('Formulaire de contact', 'ant'); ?></h3>
                 <?php if (!isset($_SESSION['contact_form_feedback']) || !$_SESSION['contact_form_feedback']['success']) : ?>
                     <form action="<?= substr(get_home_url(), 0, -2); ?>wp-admin/admin-post.php" method="POST"
-                          class="form" id="contact">
+                          class="form">
                         <?php if (isset($_SESSION['contact_form_feedback'])) : ?>
                             <p class="form__error form__title"><?= __('Oups ! Il y a des erreurs dans le formulaire', 'ant') ?></p>
                         <?php endif; ?>
@@ -35,7 +35,7 @@
                         <div class="form__field">
                             <label for="who" class="form__label"><?= __('Vous êtes', 'ant') ?></label>
                             <?= isset($_SESSION['contact_form_feedback']['errors']['who']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['who'] . '</p>' : '' ?>
-                            <select type="who" name="who" id="who" class="form__select">
+                            <select name="who" id="who" class="form__select">
                                 <option value="student"><?= __('un étudiant', 'ant') ?></option>
                                 <option value="city"><?= __('une ville', 'ant') ?></option>
                                 <option value="scientist"><?= __('un scientifique', 'ant') ?></option>
@@ -82,10 +82,10 @@
                         <a href="<?=get_field('website') ?>" class="coord__link"><?= str_replace(':name', get_the_title(), __('Visiter le site de l‘:name', 'ant')); ?></a>
                         <div class="coord__socials">
                             <a href="<?=get_field('first_social_link') ?>" class="coord__social">
-                                <img src="<?=get_field('first_social_logo') ?>" class="coord__svg style-svg">
+                                <img src="<?=get_field('first_social_logo') ?>" class="coord__svg style-svg" alt="">
                             </a>
                             <a href="<?=get_field('second_social_link') ?>" class="coord__social">
-                                <img src="<?=get_field('second_social_logo') ?>" class="coord__svg style-svg">
+                                <img src="<?=get_field('second_social_logo') ?>" class="coord__svg style-svg" alt="">
                             </a>
                         </div>
                     </div>
