@@ -6,8 +6,6 @@
   justify-content: space-between;
   gap: em(50, 16);
   grid-column: 2/-1;
-  //position: absolute;
-  //top: em(-450, 16);
   height: em(480, 16);
   right: 0;
 }
@@ -16,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   position: absolute;
-  top: em(-500, 16);
+  top: em(-540, 16);
   right: 0;
   left: 0;
 }
