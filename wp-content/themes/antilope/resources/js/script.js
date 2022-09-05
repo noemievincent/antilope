@@ -29,6 +29,7 @@ class ANT_Controller {
             item.addEventListener('load', (event) => {
             });
         }
+        console.log(items);
 
         function callback(entries, observer) {
             entries.forEach(entry => {
@@ -43,6 +44,7 @@ class ANT_Controller {
         const scrollUp = document.querySelector(".scrollup");
 
         window.addEventListener("scroll", function () {
+            console.log(window.scrollY);
             if (window.scrollY > 300) {
                 scrollUp.classList.add('active');
             } else {
@@ -52,17 +54,16 @@ class ANT_Controller {
     }
 
     removeScrollDown() {
-        if (document.body.classList.contains('home')) {
-            const scrollDown = document.querySelector(".scroll-down");
+        const scrollDown = document.querySelector(".scroll-down");
 
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 100) {
-                    scrollDown.classList.add('hide');
-                } else {
-                    scrollDown.classList.remove('hide');
-                }
-            }, false);
-        }
+        window.addEventListener("scroll", function () {
+            console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                scrollDown.classList.add('hide');
+            } else {
+                scrollDown.classList.remove('hide');
+            }
+        }, false);
     }
 }
 

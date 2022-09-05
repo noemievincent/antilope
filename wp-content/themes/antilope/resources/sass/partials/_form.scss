@@ -23,7 +23,7 @@ form {
   font-weight: 500;
 }
 
-.form__input, .form__select, .form__textarea{
+.form__input,  .form__select, .form__textarea{
   font-family: 'Work Sans', sans-serif;
   font-size: em(14, 16);
   border: 1px solid #172F0E;
@@ -33,8 +33,7 @@ form {
 }
 
 .form__input:focus,  .form__select:focus, .form__textarea:focus{
-  outline: none;
-  border: 2px solid #172F0E;
+  outline: 1.3px solid #172F0E;
 }
 
 .form__textarea {
