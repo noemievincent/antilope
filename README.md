@@ -18,6 +18,8 @@
 
 - peut varier d'une utilisation occasionnelle à quotidienne
 
+![coolors palette](readme-img/personas&parcours.png)
+
 #### CONFIGURATION DU MATÉRIEL UTILISÉ
 
 - adapté à tous les supports aussi bien du côté esthétique qu'accessible
