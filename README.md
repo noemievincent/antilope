@@ -6,6 +6,8 @@
 
 #### TRANCHE D'ÂGE
 
+![personas et parcours](readme-img/personas&parcours.png)
+
 - à partir de 18 ans
 
 #### STATUT SOCIOPROFESSIONNEL
@@ -17,8 +19,6 @@
 #### EXPÉRIENCE DE L'INFORMATIQUE ET D'INTERNET
 
 - peut varier d'une utilisation occasionnelle à quotidienne
-
-![coolors palette](readme-img/personas&parcours.png)
 
 #### CONFIGURATION DU MATÉRIEL UTILISÉ
 
