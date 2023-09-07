@@ -1,0 +1,66 @@
+.burgermenu {
+  display: none;
+  width: em(32, 16);
+  height: em(26, 16);
+  position: relative;
+}
+
+.hamburger {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle {
+  //display: block;
+  //z-index: 50;
+  position: absolute;
+  right: em(20, 13.3333);
+  top: em(30, 13.3333);
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: em(2, 16);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  transform-origin: top right;
+}
+
+.hamburger .hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.toggle:checked + .header__bar { //50
+  background-color: transparent;
+}
+
+.toggle:checked + .header__bar .burgermenu .hamburger .top-bun { //50
+  transform: rotate(-45deg);
+}
+.toggle:checked + .header__bar .burgermenu .hamburger .bottom-bun { //50
+  transform: rotate(45deg);
+}
+.toggle:checked + .header__bar .burgermenu .hamburger .meat { //50
+  opacity: 0;
+}
+
+.toggle:checked ~ .header__menu { //30
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}

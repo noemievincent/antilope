@@ -1,0 +1,64 @@
+.about h3 {
+  margin-top: em(30, 16);
+  margin-bottom: em(15, 16);
+}
+
+.partner__cards {
+  display: flex;
+  flex-direction: column;
+  gap: em(30, 16);
+}
+
+.partner__card {
+  background-color: #FFFFFF;
+  border-radius: em(20, 16);
+  box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner__card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.card__container {
+  max-width: em(800, 16);
+  padding: em(40, 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: em(60, 16);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: em(20, 16);
+  padding-right: em(40, 16);
+}
+
+.card__title {
+  font-size: em(26, 16);
+  text-transform: capitalize;
+}
+
+.card__meta {
+  line-height: em(20, 16);
+}
+
+.card__link {
+  align-self: start;
+  font-size: em(16, 16);
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 em(20, 16) em(20, 16) 0;
+}
+
+.partner__card:nth-child(odd) .card__img {
+  border-radius: em(20, 16) 0 0 em(20, 16);
+
+}

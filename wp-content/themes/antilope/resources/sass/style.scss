@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import "reset";
+@import "functions";
+
+@import "partials/svg";
+@import "partials/button";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";
+@import "partials/about";
+@import "partials/article";
+@import "partials/module";
+@import "partials/single-module";
+@import "partials/contact";
+@import "partials/legal";
+@import "partials/404";
+@import "media-queries";
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  color: #172F0E;
+  background-color: #FCF9F3;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: em(50, 16);
+}
+
+h3 {
+  font-size: em(30, 16);
+  font-weight: 500;
+}
+
+hr {
+  border-top: 2px solid #D9E0CA;
+  margin: em(60, 16) 0;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #8AAB7C;
+}
+
+.home__content {
+  margin: em(220, 16) em(60, 16) em(100, 16);
+}
+
+.sub-pages {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.sub-pages main {
+  padding: em(100, 16) em(60, 16);
+}
+
+.has_2_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: em(100, 16);
+  margin-top: em(40, 16);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.js-enabled .fade-in {
+  opacity: 0;
+  transform: translateY(2em) scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.js-enabled .fade-in.active{
+  opacity: 1;
+  transform: none;
+}
+
+.box-shadow {
+  box-shadow: 0 15px 35px rgba(23, 47, 14, 0.15);
+  transition: box-shadow ease-in-out 0.2s;
+}
+
+.box-shadow--hover:hover {
+  box-shadow: 0 25px 55px rgba(23, 47, 14, 0.25);
+}

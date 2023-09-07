@@ -1,0 +1,118 @@
+.home .articles {
+  margin-top: em(80, 16);
+}
+
+.articles__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: em(40, 16) em(12, 16);
+  justify-items: center;
+  margin-top: em(40, 16);
+}
+
+.articles__cards {
+  display: flex;
+  justify-content: center;
+  gap: em(100, 16);
+  margin-bottom: em(20, 16);
+}
+
+.article {
+  text-align: left;
+  max-width: em(400, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: em(20, 16);
+  flex: 1;
+}
+
+.article__card {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  min-width: em(280, 16);
+}
+
+.article__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-color: #FFFFFF;
+  border-radius: em(20, 16);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: em(10, 16);
+}
+
+.article__content, .article__header {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.article__header {
+  width: 100%;
+}
+
+.article__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: em(20, 16) em(20, 16) 0 0;
+}
+
+.article__content {
+  font-size: em(13, 16);
+  font-family: "Work Sans", sans-serif;
+  padding: 0 em(20, 13) em(40, 13);
+  display: flex;
+  flex-direction: column;
+  gap: em(8, 13);
+}
+
+.article__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: em(18, 13);
+  font-weight: 700;
+  text-transform: unset;
+  -webkit-line-clamp: 1;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.article__date {
+  font-weight: 300;
+}
+
+.article__excerpt {
+  line-height: em(18, 13);
+  -webkit-line-clamp: 5;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.article__link {
+  font-size: em(13, 16);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: em(-26, 13);
+  padding: em(14, 13) em(40, 13);
+  z-index: 5;
+  grid-column: 2/6;
+}
+
+.sub-pages .article__link {
+  font-size: em(14, 16);
+}

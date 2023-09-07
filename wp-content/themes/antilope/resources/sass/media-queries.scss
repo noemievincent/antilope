@@ -1,0 +1,416 @@
+@import "partials/burgermenu";
+
+@media (min-width: 1480px) {
+  form {
+    max-width: em(900, 16);
+  }
+
+  footer {
+    font-size: em(18, 16);
+  }
+
+  .pres__content, .singleModule li, .singleModule__nav, .module__excerpt {
+    font-size: em(20, 16);
+  }
+
+  .hero {
+    padding: em(250, 16) em(140, 16);
+  }
+
+  .scroll-down {
+    font-size: 0.9vw;
+  }
+
+  .hero__container {
+    max-width: em(1230, 16);
+    margin-top: 6vh;
+    font-size: 1.2vw;
+  }
+
+  .hero__link {
+    font-size: max(1em, 25px);
+  }
+
+  .articles__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .error404 {
+    margin-top: em(200, 16);
+  }
+
+  .sub-pages .article__link {
+    font-size: 0.8vw;
+  }
+
+  .sub-pages .modules__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-pages .module__card {
+    height: 100%;
+    gap: em(20, 16);
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .hero {
+    padding-top: em(180, 16);
+  }
+
+  .hero__container {
+    margin-top: 12vh;
+    font-size: 1.4vw;
+  }
+
+  .scroll-down {
+    font-size: 1.4vw;
+  }
+
+  .presentation {
+    padding-right: em(120, 14);
+  }
+
+  .pres__left {
+    gap: em(30, 16);
+  }
+
+  .pres__contact, .singleModule__contact {
+    font-size: em(18, 16);
+  }
+
+  .pres__fig {
+    align-self: center;
+  }
+
+  .presentation__img, .contact-card__coords {
+    display: none;
+  }
+
+  .home .module__card, .article__card {
+    min-width: em(200, 16);
+  }
+
+  .home .module__link, .article__link, .sub-pages .article__link {
+    font-size: em(11, 16);
+  }
+
+  .home .module__title {
+    font-size: em(20, 16);
+  }
+
+  .home .articles__cards {
+    gap: 0;
+  }
+
+  .article__title {
+    font-size: em(17, 16);
+  }
+
+  .iframe__container {
+    margin-bottom: em(80, 16);
+  }
+
+  .contact-card__card {
+    min-height: unset;
+    flex-direction: column;
+    padding: em(40, 16);
+  }
+
+  .contact-card__content {
+    gap: em(50, 16);
+  }
+
+  .contact-card__link {
+    align-self: center;
+    font-size: em(18, 16);
+  }
+
+  div.has_2_columns {
+    gap: em(40, 16);
+  }
+
+  .singleModule__header {
+    margin-bottom: em(50, 16);
+  }
+
+  .singleModule__presentation {
+    flex-direction: column;
+    gap: em(40, 16);
+  }
+
+  .singleModule__about h3 {
+    font-size: em(22, 16);
+  }
+
+  .singleModule__about li, .pollutants__link {
+    font-size: em(14, 16);
+  }
+
+  .project__container {
+    flex-direction: column;
+  }
+
+  .project__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card__fig {
+    min-width: em(300, 16);
+  }
+}
+
+@media (max-width: 880px) {
+
+  header {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .header__bar {
+    background-color: rgba(23, 47, 14, 0.5);
+    padding: em(8, 16) em(22, 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    transition: background-color ease-in-out 0.2s;
+  }
+
+  div.burgermenu {
+    display: block;
+  }
+
+  .header__menu {
+    background-color: #526649;
+    padding: em(140, 16) 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: -150%;
+    left: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: em(50, 16);
+  }
+
+  .hero__container {
+    gap: em(50, 16);
+    font-size: em(14, 16);
+  }
+
+  .scroll-down {
+    font-size: em(14, 16);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 0;
+  }
+
+  .scrolldown-desktop {
+    display: none;
+  }
+
+  .scrolldown-mobile {
+    display: block;
+  }
+
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  div.has_2_columns {
+    display: flex;
+    flex-direction: column;
+    gap: em(60, 16);
+  }
+
+  .singleModule__cards {
+    flex-direction: column;
+    gap: em(40, 16);
+  }
+
+  .singleModule__pollutants {
+    gap: em(20, 16);
+  }
+
+  .project__gallery, .card__fig {
+    display: none;
+  }
+
+  .card__content {
+    padding-right: 0;
+  }
+
+  .error404__title {
+    font-size: em(80, 16);
+  }
+
+  .error404__subtitle {
+    font-size: em(20, 16);
+  }
+  .error404__content {
+    font-size: em(18, 24);
+  }
+}
+
+@media (max-width: 798px) {
+
+  body h2 {
+    font-size: em(30, 16);
+  }
+
+  body h3 {
+    font-size: em(24, 16);
+  }
+
+  body.sub-pages main {
+    padding: em(100, 16) em(30, 16);
+  }
+
+  .card__title {
+    font-size: em(18, 16);
+  }
+
+  .sub-pages .modules__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sub-pages .module__card, .sub-pages .module__card:nth-child(odd) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 0;
+    padding: em(10, 16) em(40, 16);
+    min-width: unset;
+  }
+
+  .module__container {
+    gap: em(20, 16);
+  }
+
+  .module__excerpt {
+    display: none;
+  }
+
+  .footer__pages {
+    display: none;
+  }
+
+  .presentation {
+    font-size: em(14, 16);
+    padding: em(30, 14);
+  }
+
+  .articles__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    max-width: em(400, 16);
+  }
+
+  .home .modules__cards, .home .articles__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home .module__card {
+    min-width: em(280, 16);
+  }
+
+  .hero__title {
+    font-size: em(27, 16);
+  }
+
+  .hero__link {
+    font-size: em(17, 16);
+  }
+
+  .contact-card__link {
+    font-size: em(14, 16);
+  }
+
+  .presentation__link {
+    font-size: em(14, 16);
+  }
+}
+
+@media (max-width: 524px) {
+
+  .singleModule__header {
+    flex-direction: column;
+    align-items: start;
+    gap: em(20, 16);
+  }
+
+  .pres__contact {
+    font-size: em(16, 16);
+  }
+
+  .pres__image {
+    max-width: em(320, 16);
+  }
+
+  .form__label {
+    font-size: em(18, 16);
+  }
+
+  .form__input, .form__select, .form__textarea {
+    font-size: em(13, 16);
+  }
+
+  .form__error {
+    font-size: em(12, 16);
+  }
+
+  .form__title {
+    font-size: em(18, 16);
+  }
+
+  .footer__img {
+    max-height: em(70, 16);
+  }
+
+  .error404__title {
+    font-size: em(60, 16);
+  }
+
+  .error404__subtitle {
+    font-size: em(18, 16);
+  }
+
+  .error404__content {
+    font-size: em(16, 24);
+  }
+
+  .hero__title {
+    font-size: em(23, 16);
+  }
+
+  .hero__link {
+    font-size: em(15, 16);
+  }
+
+  .home .module__card {
+    min-width: em(240, 16);
+  }
+}

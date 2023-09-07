@@ -1,0 +1,73 @@
+.hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../img/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 160vh;
+  color: #FFFFFF;
+  padding: em(250, 16) em(60, 16);
+}
+
+.hero__title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: em(37, 16);
+  text-align: left;
+  text-transform: unset;
+  line-height: em(50, 37);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  max-width: em(800, 16);
+  gap: em(100, 16);
+  margin-top: 6vh;
+  font-size: 1.2vw;
+}
+
+.hero__link {
+  align-self: start;
+}
+
+.scroll-down {
+  display: flex;
+  font-size: 1.2vw;
+  text-align: right;
+  gap: em(20, 15);
+  position: absolute;
+  bottom: em(30, 15);
+  right: em(30, 15);
+  transition: opacity ease-in-out 0.3s;
+}
+
+.scroll-down.hide {
+  opacity: 0;
+}
+
+.scrolldown--text strong{
+  font-weight: 600;
+}
+
+.scrolldown-desktop {
+  width: em(16, 15);
+  height: em(30, 15);
+  animation: bounce 2s infinite;
+}
+
+.scrolldown-mobile {
+  display: none;
+  width: em(30, 15);
+  height: em(30, 15);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

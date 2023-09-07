@@ -1,0 +1,93 @@
+header {
+  background-color: rgba(23, 47, 14, 0.5);
+  padding: em(8, 16) em(22, 16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: em(30, 16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+}
+
+header a {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: em(17, 16);
+  transition: color ease-in-out 0.2s;
+}
+
+.header__svg {
+  width: em(35, 17);
+  height: em(48,17);
+}
+
+.header__menu, .nav__container, .header__lang {
+  display: flex;
+  gap: em(8, 16);
+}
+
+.header__menu {
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__container {
+  gap: em(70, 16);
+}
+
+.nav__item--current, .lang__locale--current {
+  font-weight: 600;
+}
+
+.nav__link:hover, .nav__link:focus, .lang__locale:hover, .lang__locale:focus {
+  color: #172F0E;
+}
+
+.home .nav__link:hover, .home .nav__link:focus, .home .lang__locale:hover, .home .lang__locale:focus {
+  color: #8AAB7C;
+}
+
+.header__logo {
+  transition: fill ease-in-out 0.2s;
+}
+
+.header__svg:hover .header__logo, .header__svg:focus .header__logo {
+  fill: #172F0E;
+}
+
+.home .header__svg:hover .header__logo, .home .header__svg:focus .header__logo {
+  fill: #8AAB7C;
+}
+
+.scrollup {
+  //display: none;
+  width: em(55, 16);
+  height: em(55, 16);
+  padding: em(16, 16);
+  border-radius: em(50, 16);
+  background-color: #8AAB7C;
+  opacity: 0;
+  position: fixed;
+  bottom: em(30, 16);
+  right: em(30, 16);
+  z-index: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.scrollup.active {
+  opacity: 0.8;
+}
+
+.scrollup.active:hover, .scrollup.active:focus {
+  opacity: 1;
+  width: em(60, 16);
+  height: em(60, 16);
+}
+
+.toggle, .burgermenu {
+  display: none;
+}

@@ -1,0 +1,28 @@
+.error404 {
+  margin-top: em(40, 16);
+}
+
+.error404__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+  font-size: em(24, 16);
+}
+
+.error404__title {
+  font-size: em(160, 24);
+  margin-bottom: em(40, 160);
+}
+
+.error404__subtitle {
+  font-size: em(40, 24);
+  margin-bottom: em(38, 24);
+}
+
+.error404__link {
+  color: #8AAB7C;
+  text-transform: lowercase;
+  font-weight: 500;
+}

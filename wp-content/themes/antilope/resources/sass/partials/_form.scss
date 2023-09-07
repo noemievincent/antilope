@@ -1,0 +1,81 @@
+form {
+  display: flex;
+  flex-direction: column;
+  //max-width: 80%;
+  gap: em(16, 16);
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+  gap: em(18, 16);
+}
+
+.form__field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: em(8, 16);
+}
+
+.form__label {
+  font-size: em(20, 16);
+  font-weight: 500;
+}
+
+.form__input,  .form__select, .form__textarea{
+  font-family: 'Work Sans', sans-serif;
+  font-size: em(14, 16);
+  border: 1px solid #172F0E;
+  border-radius: em(20, 14);
+  min-height: em(32, 14);
+  padding-left: em(10, 14);
+}
+
+.form__input:focus,  .form__select:focus, .form__textarea:focus{
+  outline: 1.3px solid #172F0E;
+}
+
+.form__textarea {
+  border-radius: em(15, 14);
+  padding-top: em(8, 14);
+}
+
+.form__select {
+  padding-left: em(6, 14);
+}
+
+.form__button {
+  font-size: em(16, 16);
+  cursor: pointer;
+}
+
+.form__checklabel a {
+  text-transform: unset;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #74826E;
+  font-weight: 300;
+  transition: opacity ease-in-out 0.2s;
+}
+
+:focus::placeholder {
+  opacity: 0.2;
+}
+
+.form__error + .form__input, .form__error + .form__textarea {
+  background-color: #F2DAD5;
+  border-color: #B42511;
+}
+
+.form__error {
+  font-size: em(14, 16);
+  color: #B42511;
+}
+
+.form__title {
+  font-size: em(18, 14);
+  font-weight: 500;
+}
